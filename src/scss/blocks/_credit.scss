@@ -26,6 +26,10 @@
     padding: calc(var(--base-padding-y) * 2.5) calc(var(--base-padding-x) * 2.5);
     background-color: var(--base-color-white);
     border-radius: var(--base-border-radius);
+
+    @include xl-d {
+      margin-top: calc(var(--base-margin-y) * 4.9);
+    }
   }
 
   &__table {
@@ -52,6 +56,10 @@
 
     &:first-child {
       width: 36.5rem;
+
+      @include xl-d {
+        width: 40.6rem;
+      }
     }
 
     &--title {
@@ -90,6 +98,11 @@
     margin-bottom: calc(var(--base-margin-y) * 12.5);
     @include flex-row;
     justify-content: space-between;
+
+    @include xl-d {
+      margin-top: calc(var(--base-margin-y) * 9.2);
+      flex-direction: column;
+    }
   }
 
   &__faq-title {
@@ -98,6 +111,10 @@
     line-height: 3.12rem;
     padding-left: calc(var(--base-padding-x) * 3.2 + 1px);
     position: relative;
+
+    @include xl-d {
+      padding-left: calc(var(--base-padding-x) * 3.7 + 1px);
+    }
 
     &::before {
       content: url("../img/Question.svg");
@@ -112,5 +129,10 @@
   &__faq-accordion {
     max-width: 76.3rem;
     margin-top: calc(var(--base-margin-y) + 0.338rem);
+
+    @include xl-d {
+      max-width: 100%;
+      margin-top: calc(var(--base-margin-y) + 1.6rem);
+    }
   }
 }
