@@ -1,0 +1,83 @@
+.hero {
+  position: relative;
+  background-image: var(--hero-gradient);
+  overflow: hidden;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 7.2rem;
+    left: 40%;
+    width: 11.3rem;
+    height: 14.3rem;
+    background-color: var(--base-color-blue-2);
+    filter: blur(75px);
+    border-radius: 50%;
+  }
+
+  &__banner {
+    @include flex-row;
+    justify-content: space-between;
+    align-items: center;
+    background: url("../img/banner-1.png") left center / cover no-repeat;
+  }
+
+  &__banner-text {
+    padding-left: var(--padding-side);
+    @include flex-column;
+    gap: var(--base-gap);
+    margin-top: -0.1rem;
+
+    @include xl-d {
+      padding-left: var(--base-padding-x);
+    }
+  }
+
+  &__banner-text-header {
+    font-size: 3.8rem;
+    line-height: 4.9rem;
+    font-weight: 600;
+  }
+
+  &__banner-text-link {
+    margin-top: var(--base-margin-y);
+    display: block;
+    color: var(--base-color-white);
+    background-color: var(--color-primary);
+    border-radius: calc(var(--base-border-radius) / 2);
+    width: 23.1rem;
+    height: 4.8rem;
+    @include flex-center;
+    font-weight: 500;
+    transition: opacity evar(--base-anim-fn) var(--base-anim-time),
+      background-color var(--base-anim-fn) var(--base-anim-time);
+
+    &:hover {
+      background-color: var(--base-color-red-1);
+    }
+
+    &:active {
+      opacity: 0.9;
+    }
+  }
+
+  &__banner-img-container {
+    position: relative;
+    right: calc(var(--padding-side) + 7.7rem);
+    max-width: 33rem;
+    height: 33rem;
+    flex-shrink: 1;
+    margin: calc(var(--base-margin-y) * 3 + 1px) 0;
+
+    @include xl-d {
+      right: calc(var(--base-padding-x) * -9);
+    }
+  }
+
+  &__banner-img {
+    position: absolute;
+    top: -2.6rem;
+    right: -4.2rem;
+    max-width: none;
+  }
+}

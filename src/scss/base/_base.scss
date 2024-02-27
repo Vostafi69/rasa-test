@@ -1,0 +1,15 @@
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+}
+
+body {
+  background-color: var(--base-color-gray-6);
+  color: var(--color-text);
+  font-family: var(--base-font-family);
+  font-size: var(--base-font-size);
+  line-height: var(--base-line-height);
+  font-weight: var(--base-font-weight);
+  max-width: 1920px;
+  margin: 0 auto;
+}

@@ -1,0 +1,49 @@
+.form-car-filter {
+  @include flex-row;
+  justify-content: space-between;
+
+  &__label {
+    font-weight: 500;
+
+    &--car {
+      flex-grow: 1;
+      margin-right: calc(var(--base-margin-x) * 3);
+    }
+
+    &--year {
+      width: 219px;
+      margin-right: calc(var(--base-margin-x) * 2);
+    }
+  }
+
+  &__inputs {
+    @include flex-row;
+    align-items: center;
+  }
+
+  &__separator {
+    width: 1.8rem !important;
+    height: 0.2rem !important;
+    margin: var(--base-margin-y) calc(var(--base-margin-x) * 2 + 0.2rem) 0 calc(var(--base-margin-x) * 2 + 0.2rem) !important;
+  }
+
+  &__input {
+    margin-top: var(--base-margin-y);
+    background-color: var(--base-color-gray-10);
+    border-radius: calc(var(--base-border-radius) / 2);
+    border: 1px solid var(--base-color-gray-9);
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+    padding: calc(var(--base-padding-y) - 0.6rem) var(--base-padding-x);
+    transition: border-color var(--base-anim-fn) var(--base-anim-time);
+    width: 17rem;
+
+    &:focus {
+      border-color: var(--base-color-gray-5);
+    }
+  }
+
+  &__select {
+    margin-top: var(--base-margin-y);
+  }
+}

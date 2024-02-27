@@ -1,0 +1,9 @@
+.logo {
+  width: 13rem;
+  height: 3rem;
+
+  &__img {
+    object-fit: cover;
+    object-position: center;
+  }
+}

@@ -1,0 +1,47 @@
+<form class="form-car-filter" action="GET">
+  <!-- select 1 -->
+  <label class="form-car-filter__label form-car-filter__label--car"
+    >Марка<br />
+    <div class="select form-car-filter__select">
+      <select class="select__list" name="cars" required>
+        <option class="select__option select__option--default" value="" selected>Выбрать</option>
+        <option class="select__option" value="1">Audi</option>
+        <option class="select__option" value="2">BMW</option>
+        <option class="select__option" value="3">Citroen</option>
+        <option class="select__option" value="4">Ford</option>
+        <option class="select__option" value="5">Honda</option>
+        <option class="select__option" value="6">Jaguar</option>
+        <option class="select__option" value="7">Land Rover</option>
+        <option class="select__option" value="8">Mercedes</option>
+        <option class="select__option" value="9">Mini</option>
+        <option class="select__option" value="10">Nissan</option>
+        <option class="select__option" value="11">Toyota</option>
+        <option class="select__option" value="12">Volvo</option>
+      </select>
+    </div>
+  </label>
+  <!-- selector 2 -->
+  <label class="form-car-filter__label form-car-filter__label--year"
+    >Год<br />
+    <div class="select form-car-filter__select">
+      <select class="select__list" name="years" required>
+        <option class="select__option select__option--default" value="" selected>Выбрать</option>
+        <option class="select__option" value="1">2002</option>
+        <option class="select__option" value="2">2003</option>
+        <option class="select__option" value="3">2004</option>
+        <option class="select__option" value="4">2005</option>
+        <option class="select__option" value="5">2002</option>
+        <option class="select__option" value="6">2012</option>
+        <option class="select__option" value="7">2022</option>
+      </select>
+    </div>
+  </label>
+  <fieldset class="form-car-filter__fieldset">
+    <legend class="form-car-filter__label">Цена</legend>
+    <div class="form-car-filter__inputs">
+      <input class="form-car-filter__input" id="price-from" type="text" placeholder="От" />
+      <div class="separator form-car-filter__separator"></div>
+      <input class="form-car-filter__input" id="price-to" type="text" placeholder="До" />
+    </div>
+  </fieldset>
+</form>

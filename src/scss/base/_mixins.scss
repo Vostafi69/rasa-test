@@ -1,0 +1,61 @@
+@mixin flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin flex-center {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin transition($properties: "all", $delay: 0) {
+  transition-duration: var(--base-anim-time);
+  transition-timing-function: var(--base-anim-fn);
+  transition-property: $properties;
+  transition-delay: $delay + ms;
+}
+
+// @media
+$breakpoints: (
+  sm: 361px,
+  md: 769px,
+  lg: 993px,
+  xl: 1201px,
+  xxl: 1441px,
+);
+
+@mixin sm-d {
+  @media (max-width: calc(map-get($breakpoints, sm) - 0.02px)) {
+    @content;
+  }
+}
+
+@mixin md-d {
+  @media (max-width: calc(map-get($breakpoints, md) - 0.02px)) {
+    @content;
+  }
+}
+
+@mixin lg-d {
+  @media (max-width: calc(map-get($breakpoints, lg) - 0.02px)) {
+    @content;
+  }
+}
+
+@mixin xl-d {
+  @media (max-width: calc(map-get($breakpoints, xl) - 0.02px)) {
+    @content;
+  }
+}
+
+@mixin xll-d {
+  @media (max-width: calc(map-get($breakpoints, xll) - 0.02px)) {
+    @content;
+  }
+}

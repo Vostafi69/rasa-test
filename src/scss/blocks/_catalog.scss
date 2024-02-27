@@ -1,0 +1,89 @@
+.catalog {
+  &__container {
+    margin: 0 auto;
+  }
+
+  &__header {
+    @include flex-row;
+    justify-content: space-between;
+    margin-top: calc(var(--base-margin-y) * 5);
+    margin-bottom: calc(var(--base-margin-y) * 3);
+  }
+
+  &__title {
+    font-weight: 500;
+    font-size: 3.2rem;
+    line-height: 4.2rem;
+  }
+
+  &__show-button {
+    width: 25.6rem;
+    height: 4rem;
+    padding: 0 calc(var(--base-padding-x) * 1.5);
+    @include flex-row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--base-color-white);
+    color: var(--color-primary);
+    font-weight: 500;
+    position: relative;
+    border-radius: calc(var(--base-border-radius) / 4);
+    transition: background-color var(--base-anim-fn) var(--base-anim-time);
+
+    &:hover {
+      background-color: var(--base-color-gray-7);
+    }
+
+    &:active {
+      background-color: var(--base-color-gray-8);
+    }
+  }
+
+  &__show-button--collapsed &__show-button-icon {
+    transform: rotate(-180deg);
+  }
+
+  &__show-button-icon {
+    pointer-events: none;
+    width: 2.4rem;
+    height: 2.4rem;
+    transition: transform var(--base-anim-fn) var(--base-anim-time);
+  }
+
+  &__collapse {
+    overflow: hidden;
+    display: grid;
+    grid-template-rows: 0fr;
+    opacity: 0;
+    transition: grid-template-rows var(--base-anim-fn) var(--base-anim-time),
+      opacity var(--base-anim-fn) var(--base-anim-time);
+
+    &--show {
+      grid-template-rows: 1fr;
+      opacity: 1;
+    }
+  }
+
+  &__body {
+    overflow: hidden;
+  }
+
+  &__offers {
+    margin-top: calc(var(--base-margin-y) * 3);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--base-gap);
+  }
+
+  &__offers-car-article-best {
+    grid-column: 1 / 4;
+  }
+
+  &__offers-car-articles {
+    display: grid;
+    grid-column: 1 / 4;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: calc(var(--base-gap) - 0.2rem);
+    column-gap: var(--base-gap);
+  }
+}

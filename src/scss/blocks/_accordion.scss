@@ -1,0 +1,93 @@
+:root {
+  --accordion-color: var(--base-color-black);
+  --accordion-body-bg-color: var(--base-color-transparent);
+  --accordion-header-bg-color: var(--base-color-white);
+  --accordion-font-size: var(--base-font-size);
+  --accordion-border-radius: var(--base-border-radius);
+
+  --accordion-header-padding-y: var(--base-padding-y);
+  --accrodion-header-padding-x: calc(var(--base-padding-x) * 1.5);
+
+  --accordion-body-padding-y: var(--base-padding-y);
+  --accordion-body-padding-x: var(--base-padding-x);
+}
+
+.accordion {
+  &__header {
+    font-size: var(--accordion-font-size);
+    position: relative;
+    z-index: 8;
+  }
+
+  &__accordion__item {
+    color: var(--accordion-color);
+  }
+
+  &__button {
+    position: relative;
+    width: 100%;
+    @include flex-row;
+    background-color: var(--accordion-header-bg-color);
+    align-items: center;
+    justify-content: space-between;
+    border-radius: var(--accordion-border-radius);
+    padding: var(--accordion-header-padding-y) calc(var(--accrodion-header-padding-x) * 2)
+      var(--accordion-header-padding-y) var(--accrodion-header-padding-x);
+
+    &::after {
+      width: 2rem;
+      height: 2rem;
+      content: url("../img/chevron-black.svg");
+      margin-left: auto;
+      @include transition(transform);
+      transform: rotate(0);
+      @include flex-center;
+    }
+
+    &--collpased::after {
+      transform: rotate(-180deg);
+    }
+  }
+
+  &__collapse {
+    position: relative;
+    display: grid;
+    grid-template-rows: 0fr;
+    @include transition(
+      $properties: (
+        grid-template-rows,
+        padding-top,
+        padding-bottom,
+      )
+    );
+    padding: 0 var(--accordion-body-padding-x);
+    background-color: var(--accordion-body-bg-color);
+    border-radius: 0 0 var(--accordion-border-radius) var(--accordion-border-radius);
+
+    &::before {
+      content: "";
+      position: absolute;
+      height: var(--accordion-header-padding-y);
+      top: calc(-2 * var(--accordion-header-padding-y));
+      left: 0;
+      right: 0;
+      z-index: 5;
+      background-color: var(--accordion-body-bg-color);
+    }
+
+    &--show {
+      grid-template-rows: 1fr;
+      padding-top: var(--accordion-body-padding-y);
+      padding-bottom: var(--accordion-body-padding-y);
+      overflow: visible;
+    }
+
+    &--show::before {
+      top: calc(-1 * var(--accordion-header-padding-y));
+    }
+  }
+
+  &__body {
+    overflow: hidden;
+  }
+}
