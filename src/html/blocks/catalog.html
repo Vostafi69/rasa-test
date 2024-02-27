@@ -1,0 +1,365 @@
+<section class="catalog">
+  <div class="container catalog__container" id="car-catalog">
+    <!-- catalog header -->
+
+    <div class="catalog__header">
+      <h2 class="catalog__title">Выберите себе авто</h2>
+      <button class="catalog__show-button" aria-expanded="true" aria-controls="collapse-car-catalog" type="button">
+        Свернуть список машин
+        <object class="catalog__show-button-icon" type="image/svg+xml" data="./img/chevron.svg"></object>
+      </button>
+    </div>
+    <div class="catalog__collapse catalog__collapse--show" id="collapse-car-catalog" aria-labelledby="car-catalog">
+      <div class="catalog__body">
+        <!-- catalog content -->
+
+        @@include('car-search-form.html')
+
+        <div class="catalog__offers catalog__offers--show">
+          <article class="car-article-best catalog__offers-car-article-best">
+            <!-- cars's desc -->
+            <div class="car-article-best__text">
+              <p class="car-article-best__badge">Лучшее предложение</p>
+              <h3 class="car-article-best__header">
+                <a class="car-article-best__header-link" href="#" role="heading" target="_blank"
+                  >Renault Arkana drive</a
+                >
+              </h3>
+              <p class="car-article-best__desc">
+                Купе-кроссовер Renault ARKANA — автомобиль, созданный с чистого листа. В нем все по-новому: от дизайна
+                кузова до эргономики салона. Получилось эмоционально и надежно — оцените сами!
+              </p>
+              <p class="car-article-best__price">от 1 316 000 ₽</p>
+              <a class="car-article-best__details-link" href="#" role="button" target="_blank">Подробнее</a>
+            </div>
+
+            <!-- carousel -->
+            <div class="swiper car-article-best__swiper">
+              <div class="swiper-wrapper car-article-best__swiper-wrapper">
+                <div class="swiper-slide car-article-best__swiper-slide">
+                  <img class="car-article-best__swiper-img" src="./img/1.png" alt="frontView" />
+                </div>
+                <div class="swiper-slide car-article-best__swiper-slide">
+                  <img class="car-article-best__swiper-img" src="./img/2.png" alt="sideView" />
+                </div>
+                <div class="swiper-slide car-article-best__swiper-slide">
+                  <img class="car-article-best__swiper-img" src="./img/3.png" alt="sideView" />
+                </div>
+                <div class="swiper-slide car-article-best__swiper-slide">
+                  <img class="car-article-best__swiper-img" src="./img/4.png" alt="backView" />
+                </div>
+              </div>
+              <div class="swiper-button-prev car-article-best__swiper-button-prev"></div>
+              <div class="swiper-button-next car-article-best__swiper-button-next"></div>
+            </div>
+          </article>
+          <article class="car-article-best catalog__offers-car-article-best">
+            <!-- cars's desc -->
+            <div class="car-article-best__text">
+              <p class="car-article-best__badge">Лучшее предложение</p>
+              <h3 class="car-article-best__header">
+                <a class="car-article-best__header-link" href="#" role="heading" target="_blank"
+                  >Volkswagen Tiguan PA</a
+                >
+              </h3>
+              <p class="car-article-best__desc">
+                Купе-кроссовер Renault ARKANA — автомобиль, созданный с чистого листа. В нем все по-новому: от дизайна
+                кузова до эргономики салона. Получилось эмоционально и надежно — оцените сами!
+              </p>
+              <p class="car-article-best__price">от 2 395 000 ₽</p>
+              <a class="car-article-best__details-link" href="#" role="button" target="_blank">Подробнее</a>
+            </div>
+
+            <!-- carousel -->
+            <div class="swiper car-article-best__swiper">
+              <div class="swiper-wrapper car-article-best__swiper-wrapper">
+                <div class="swiper-slide car-article-best__swiper-slide">
+                  <img class="car-article-best__swiper-img" src="./img/c1.png" alt="frontView" />
+                </div>
+                <div class="swiper-slide car-article-best__swiper-slide">
+                  <img class="car-article-best__swiper-img" src="./img/c2.png" alt="sideView" />
+                </div>
+                <div class="swiper-slide car-article-best__swiper-slide">
+                  <img class="car-article-best__swiper-img" src="./img/c3.png" alt="sideView" />
+                </div>
+              </div>
+              <div class="swiper-button-prev car-article-best__swiper-button-prev"></div>
+              <div class="swiper-button-next car-article-best__swiper-button-next"></div>
+            </div>
+          </article>
+          <article class="car-article-best catalog__offers-car-article-best">
+            <!-- cars's desc -->
+            <div class="car-article-best__text">
+              <p class="car-article-best__badge">Лучшее предложение</p>
+              <h3 class="car-article-best__header">
+                <a class="car-article-best__header-link" href="#" role="heading" target="_blank">BMW X7</a>
+              </h3>
+              <p class="car-article-best__desc">
+                Купе-кроссовер Renault ARKANA — автомобиль, созданный с чистого листа. В нем все по-новому: от дизайна
+                кузова до эргономики салона. Получилось эмоционально и надежно — оцените сами!
+              </p>
+              <p class="car-article-best__price">от 8 188 000 ₽</p>
+              <a class="car-article-best__details-link" href="#" role="button" target="_blank">Подробнее</a>
+            </div>
+
+            <!-- carousel -->
+            <div class="swiper car-article-best__swiper">
+              <div class="swiper-wrapper car-article-best__swiper-wrapper">
+                <div class="swiper-slide car-article-best__swiper-slide">
+                  <img class="car-article-best__swiper-img" src="./img/d1.png" alt="frontView" />
+                </div>
+                <div class="swiper-slide car-article-best__swiper-slide">
+                  <img class="car-article-best__swiper-img" src="./img/d2.png" alt="sideView" />
+                </div>
+                <div class="swiper-slide car-article-best__swiper-slide">
+                  <img class="car-article-best__swiper-img" src="./img/d3.png" alt="sideView" />
+                </div>
+                <div class="swiper-slide car-article-best__swiper-slide">
+                  <img class="car-article-best__swiper-img" src="./img/d4.png" alt="backView" />
+                </div>
+              </div>
+              <div class="swiper-button-prev car-article-best__swiper-button-prev"></div>
+              <div class="swiper-button-next car-article-best__swiper-button-next"></div>
+            </div>
+          </article>
+
+          <!-- cars catalog -->
+          <div class="catalog__offers-car-articles">
+            <!-- start -->
+
+            <!-- first row -->
+            <a class="car-article" href="#" target="_blank" role="article">
+              <div class="car-article__img-wrapper">
+                <img class="car-article__img" src="./img/car1.png" alt="KIA Sportage. LUXE+ 2Л" />
+              </div>
+              <h3 class="car-article__title">KIA Sportage. LUXE+ 2Л</h3>
+              <p class="car-article__location">г.Якутск</p>
+              <div class="car-article__footer">
+                <p class="car-article__price">2 211 700 ₽</p>
+                <button class="car-article__more-btn">Подробнее</button>
+              </div>
+            </a>
+            <a class="car-article" href="#" target="_blank" role="article">
+              <div class="car-article__img-wrapper">
+                <img class="car-article__img" src="./img/car2.png" alt="Skoda Karoq" />
+              </div>
+              <h3 class="car-article__title">Skoda Karoq</h3>
+              <p class="car-article__location">г. Казань</p>
+              <div class="car-article__footer">
+                <p class="car-article__price">1 790 000 ₽</p>
+                <button class="car-article__more-btn">Подробнее</button>
+              </div>
+            </a>
+            <a class="car-article" href="#" target="_blank" role="article">
+              <div class="car-article__img-wrapper">
+                <img class="car-article__img" src="./img/car3.png" alt="Citroen c4" />
+              </div>
+              <h3 class="car-article__title">Citroen c4</h3>
+              <p class="car-article__location">г. Уфа</p>
+              <div class="car-article__footer">
+                <p class="car-article__price">1 523 000 ₽</p>
+                <button class="car-article__more-btn">Подробнее</button>
+              </div>
+            </a>
+
+            <!-- second row -->
+
+            <a class="car-article" href="#" target="_blank" role="article">
+              <div class="car-article__img-wrapper">
+                <img class="car-article__img" src="./img/car4.png" alt="Mercedes-benz Gls 400 D 4m Luxury" />
+              </div>
+              <h3 class="car-article__title">Mercedes-benz Gls 400 D 4m Luxury</h3>
+              <p class="car-article__location">г. Казань</p>
+              <div class="car-article__footer">
+                <p class="car-article__price">2 211 700 ₽</p>
+                <button class="car-article__more-btn">Подробнее</button>
+              </div>
+            </a>
+            <a class="car-article" href="#" target="_blank" role="article">
+              <div class="car-article__img-wrapper">
+                <img class="car-article__img" src="./img/car5.png" alt="Mercedes-benz Gle 350 D 4matic купе" />
+              </div>
+              <h3 class="car-article__title">Mercedes-benz Gle 350 D 4matic купе</h3>
+              <p class="car-article__location">г. Казань</p>
+              <div class="car-article__footer">
+                <p class="car-article__price">2 211 700 ₽</p>
+                <button class="car-article__more-btn">Подробнее</button>
+              </div>
+            </a>
+            <a class="car-article" href="#" target="_blank" role="article">
+              <div class="car-article__img-wrapper">
+                <img class="car-article__img" src="./img/car6.png" alt="Mercedes-benz Gle 300 D 4matic Sport" />
+              </div>
+              <h3 class="car-article__title">Mercedes-benz Gle 300 D 4matic Sport</h3>
+              <p class="car-article__location">г. Казань</p>
+              <div class="car-article__footer">
+                <p class="car-article__price">2 211 700 ₽</p>
+                <button class="car-article__more-btn">Подробнее</button>
+              </div>
+            </a>
+
+            <!-- third row -->
+
+            <a class="car-article" href="#" target="_blank" role="article">
+              <div class="car-article__img-wrapper">
+                <img class="car-article__img" src="./img/car7.png" alt="Kia Sportage. Luxe+ 2.4л" />
+              </div>
+              <h3 class="car-article__title">Kia Sportage. Luxe+ 2.4л</h3>
+              <p class="car-article__location">г.Якутск</p>
+              <div class="car-article__footer">
+                <p class="car-article__price">2 336 700 ₽</p>
+                <button class="car-article__more-btn">Подробнее</button>
+              </div>
+            </a>
+            <a class="car-article" href="#" target="_blank" role="article">
+              <div class="car-article__img-wrapper">
+                <img class="car-article__img" src="./img/car8.png" alt="Kia K5. Prestige. 2.5л" />
+              </div>
+              <h3 class="car-article__title">Kia K5. Prestige. 2.5л</h3>
+              <p class="car-article__location">г. Якутск</p>
+              <div class="car-article__footer">
+                <p class="car-article__price">2 242 400 ₽</p>
+                <button class="car-article__more-btn">Подробнее</button>
+              </div>
+            </a>
+            <a class="car-article" href="#" target="_blank" role="article">
+              <div class="car-article__img-wrapper">
+                <img class="car-article__img" src="./img/car9.png" alt="Honda Freed" />
+              </div>
+              <h3 class="car-article__title">Honda Freed</h3>
+              <p class="car-article__location">С аукциона Японии.</p>
+              <div class="car-article__footer">
+                <p class="car-article__price">от 650 000 ₽</p>
+                <button class="car-article__more-btn">Подробнее</button>
+              </div>
+            </a>
+
+            <!-- fourth row -->
+
+            <a class="car-article" href="#" target="_blank" role="article">
+              <div class="car-article__img-wrapper">
+                <img class="car-article__img" src="./img/car10.png" alt="Nissan Caravan (nv350)" />
+              </div>
+              <h3 class="car-article__title">Nissan Caravan (nv350)</h3>
+              <p class="car-article__location">С аукциона Японии</p>
+              <div class="car-article__footer">
+                <p class="car-article__price">от 1 250 000 ₽</p>
+                <button class="car-article__more-btn">Подробнее</button>
+              </div>
+            </a>
+            <a class="car-article" href="#" target="_blank" role="article">
+              <div class="car-article__img-wrapper">
+                <img class="car-article__img" src="./img/car11.png" alt="Toyota Land Cruizer Prado" />
+              </div>
+              <h3 class="car-article__title">Toyota Land Cruizer Prado</h3>
+              <p class="car-article__location">С аукциона Японии</p>
+              <div class="car-article__footer">
+                <p class="car-article__price">от 2 500 000 ₽</p>
+                <button class="car-article__more-btn">Подробнее</button>
+              </div>
+            </a>
+            <a class="car-article" href="#" target="_blank" role="article">
+              <div class="car-article__img-wrapper">
+                <img class="car-article__img" src="./img/car12.png" alt="Toyota Vitz" />
+              </div>
+              <h3 class="car-article__title">Toyota Vitz</h3>
+              <p class="car-article__location">С аукциона Японии</p>
+              <div class="car-article__footer">
+                <p class="car-article__price">от 480 000 ₽</p>
+                <button class="car-article__more-btn">Подробнее</button>
+              </div>
+            </a>
+
+            <!-- fifth row -->
+
+            <a class="car-article" href="#" target="_blank" role="article">
+              <div class="car-article__img-wrapper">
+                <img class="car-article__img" src="./img/car13.png" alt="Toyota Vitz" />
+              </div>
+              <h3 class="car-article__title">Toyota Vitz</h3>
+              <p class="car-article__location">С аукциона Японии</p>
+              <div class="car-article__footer">
+                <p class="car-article__price">от 520 000 ₽</p>
+                <button class="car-article__more-btn">Подробнее</button>
+              </div>
+            </a>
+            <a class="car-article" href="#" target="_blank" role="article">
+              <div class="car-article__img-wrapper">
+                <img class="car-article__img" src="./img/car14.png" alt="KIA Sportage. LUXE+ 2Л" />
+              </div>
+              <h3 class="car-article__title">KIA Sportage. LUXE+ 2Л</h3>
+              <p class="car-article__location">С аукциона Японии</p>
+              <div class="car-article__footer">
+                <p class="car-article__price">от 750 000 ₽</p>
+                <button class="car-article__more-btn">Подробнее</button>
+              </div>
+            </a>
+            <a class="car-article" href="#" target="_blank" role="article">
+              <div class="car-article__img-wrapper">
+                <img class="car-article__img" src="./img/car15.png" alt="KIA Sportage. LUXE+ 2Л" />
+              </div>
+              <h3 class="car-article__title">KIA Sportage. LUXE+ 2Л</h3>
+              <p class="car-article__location">С аукциона Японии</p>
+              <div class="car-article__footer">
+                <p class="car-article__price">от 800 000 ₽</p>
+                <button class="car-article__more-btn">Подробнее</button>
+              </div>
+            </a>
+
+            <!-- sixth row -->
+
+            <a class="car-article" href="#" target="_blank" role="article">
+              <div class="car-article__img-wrapper">
+                <img class="car-article__img" src="./img/car16.png" alt="Toyota Vitz" />
+              </div>
+              <h3 class="car-article__title">Toyota Vitz</h3>
+              <p class="car-article__location">С аукциона Японии</p>
+              <div class="car-article__footer">
+                <p class="car-article__price">от 1 050 000</p>
+                <button class="car-article__more-btn">Подробнее</button>
+              </div>
+            </a>
+            <a class="car-article" href="#" target="_blank" role="article">
+              <div class="car-article__img-wrapper">
+                <img class="car-article__img" src="./img/car17.png" alt="KIA Sportage. LUXE+ 2Л" />
+              </div>
+              <h3 class="car-article__title">KIA Sportage. LUXE+ 2Л</h3>
+              <p class="car-article__location">С аукциона Японии</p>
+              <div class="car-article__footer">
+                <p class="car-article__price">от 600 000 ₽</p>
+                <button class="car-article__more-btn">Подробнее</button>
+              </div>
+            </a>
+            <a class="car-article" href="#" target="_blank" role="article">
+              <div class="car-article__img-wrapper">
+                <img class="car-article__img" src="./img/car18.png" alt="KIA Sportage. LUXE+ 2Л" />
+              </div>
+              <h3 class="car-article__title">KIA Sportage. LUXE+ 2Л</h3>
+              <p class="car-article__location">С аукциона Японии</p>
+              <div class="car-article__footer">
+                <p class="car-article__price">от 850 000 ₽</p>
+                <button class="car-article__more-btn">Подробнее</button>
+              </div>
+            </a>
+
+            <!-- seventh row -->
+
+            <a class="car-article" href="#" target="_blank" role="article">
+              <div class="car-article__img-wrapper">
+                <img class="car-article__img" src="./img/car19.png" alt="KIA Sportage. LUXE+ 2Л" />
+              </div>
+              <h3 class="car-article__title">KIA Sportage. LUXE+ 2Л</h3>
+              <p class="car-article__location">С аукциона Японии</p>
+              <div class="car-article__footer">
+                <p class="car-article__price">от 440 000 ₽</p>
+                <button class="car-article__more-btn">Подробнее</button>
+              </div>
+            </a>
+          </div>
+          <!-- end -->
+        </div>
+      </div>
+    </div>
+    <!-- end collapse -->
+  </div>
+</section>

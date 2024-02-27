@@ -1,0 +1,48 @@
+.contacts {
+  @include flex-column;
+  gap: calc(var(--base-gap) * 1.5);
+
+  &__phone {
+    font-size: 2.4rem;
+    line-height: 3.12rem;
+  }
+
+  &__term:not(:first-child) {
+    margin-top: calc(var(--base-gap) * 1.5);
+  }
+
+  &__label {
+    margin-top: var(--base-margin-y);
+    font-size: 1.3rem;
+    color: var(--base-color-gray-5);
+    line-height: 1.69rem;
+  }
+
+  &__social-list {
+    @include flex-row;
+    gap: var(--base-gap);
+  }
+
+  &__social-link {
+    width: 4.6rem;
+    height: 4.6rem;
+    display: block;
+    @include flex-center;
+    background-color: var(--base-color-gray-8);
+    border-radius: 0.9rem;
+    transition: transform var(--base-anim-fn) var(--base-anim-time),
+      background-color var(--base-anim-fn) var(--base-anim-time);
+
+    &:hover {
+      transform: scale(1.1);
+      background-color: var(--base-color-gray-7);
+    }
+  }
+
+  &__social-img {
+    object-position: center;
+    pointer-events: none;
+    width: 3rem;
+    height: 3rem;
+  }
+}

@@ -1,0 +1,67 @@
+.header-bottom {
+  padding: calc(var(--base-padding-y) + 0.3rem) var(--padding-side);
+  @include flex-row;
+  align-items: center;
+
+  &__nav-list {
+    @include flex-row;
+    gap: var(--base-gap);
+    margin-left: calc(var(--base-margin-x) * 3);
+    letter-spacing: 0.06px;
+  }
+
+  &__nav-link {
+    color: var(--base-color-black-1);
+    line-height: 2rem;
+    transition: color var(--base-anim-fn) var(--base-anim-time);
+
+    &:hover {
+      color: var(--color-primary);
+    }
+  }
+
+  &__info {
+    @include flex-row;
+    margin-left: auto;
+    align-items: center;
+    gap: var(--base-gap);
+    font-weight: 500;
+  }
+
+  &__call,
+  &__bank {
+    position: relative;
+    padding-left: calc(var(--base-padding-x) * 2);
+    line-height: 2.4rem;
+    cursor: pointer;
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 2.4rem;
+      height: 2.4rem;
+      left: 0;
+      pointer-events: none;
+    }
+  }
+
+  &__call {
+    color: var(--base-color-green);
+
+    &::before {
+      background-image: url(../img/Phone.svg);
+    }
+  }
+
+  &__bank {
+    color: var(--color-primary);
+
+    &::before {
+      background-image: url(../img/login.svg);
+    }
+  }
+}

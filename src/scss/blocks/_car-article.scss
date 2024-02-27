@@ -1,0 +1,81 @@
+.car-article {
+  display: block;
+  background-color: var(--base-color-white);
+  padding: var(--base-padding-y) var(--base-padding-x);
+  border-radius: var(--base-border-radius);
+  height: 33.6rem;
+
+  &:hover &__more-btn {
+    padding-right: calc(var(--base-padding-x) * 2 + 2px);
+    color: var(--color-primary);
+  }
+
+  &:hover &__more-btn::after {
+    right: 0;
+  }
+
+  &:hover &__img {
+    transform: scale(1.1);
+  }
+
+  &__img-wrapper {
+    border-radius: var(--base-border-radius);
+    overflow: hidden;
+    max-height: 20rem;
+    width: 100%;
+  }
+
+  &__img {
+    transition: transform var(--base-anim-fn) calc(var(--base-anim-time) + 0.2s);
+    object-position: center;
+    object-fit: cover;
+  }
+
+  &__title {
+    font-size: 1.7rem;
+    color: var(--base-color-black-1);
+    line-height: 2.2rem;
+    font-weight: 500;
+    margin-top: calc(var(--base-margin-y) * 2);
+  }
+
+  &__location {
+    margin-top: calc(var(--base-margin-y) * 2);
+    color: var(--color-text-second);
+    letter-spacing: -0.3px;
+  }
+
+  &__price {
+    color: var(--color-primary);
+    line-height: 2.2rem;
+    font-weight: 500;
+    font-size: 1.7rem;
+  }
+
+  &__footer {
+    @include flex-row;
+    justify-content: space-between;
+    margin-top: var(--base-margin-y);
+    align-items: center;
+  }
+
+  &__more-btn {
+    color: var(--color-text-second);
+    font-size: 1.3rem;
+    line-height: 1.7rem;
+    letter-spacing: 0.02px;
+    position: relative;
+    overflow: hidden;
+    transition: padding ease 0.3s, color var(--base-anim-fn) var(--base-anim-time);
+
+    &::after {
+      content: url("../img/arrow-more.svg");
+      position: absolute;
+      top: 0;
+      width: 1.8rem;
+      bottom: 0;
+      right: -3.4rem;
+      transition: right var(--base-anim-fn) var(--base-anim-time);
+    }
+  }
+}

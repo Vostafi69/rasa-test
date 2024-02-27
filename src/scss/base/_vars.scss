@@ -1,0 +1,63 @@
+:root {
+  // base colors
+  --base-color-black: #000000;
+  --base-color-black-1: #0d0d0d;
+  --base-color-black-2: #111111;
+  --base-color-black-3: #282828;
+  --base-color-white: #ffffff;
+  --base-color-red-1: #560227;
+  --base-color-red-2: #760135;
+  --base-color-red-3: #87043f;
+  --base-color-gray-1: #313133;
+  --base-color-gray-2: #484a4d;
+  --base-color-gray-3: #606266;
+  --base-color-gray-4: #8d8d8d;
+  --base-color-gray-5: #babcc2;
+  --base-color-gray-6: #f7f9fa;
+  --base-color-gray-7: #e0e1e6;
+  --base-color-gray-8: #e6e7eb;
+  --base-color-gray-9: #ecedf0;
+  --base-color-gray-10: #f3f3f5;
+  --base-color-gray-11: #7e7f85;
+  --base-color-green: #25b456;
+  --base-color-blue-1: #009ee2;
+  --base-color-blue-2: #a4c4ff;
+  --base-color-transparent: transparent;
+
+  // base border radius
+  --base-border-radius: 1.6rem;
+
+  // base font size
+  --base-font-size: 1.5rem;
+  --base-font-weight: 400;
+  --base-line-height: 19.5px;
+  --base-font-family: "IBM Plex Sans", sans-serif;
+
+  // base colors
+  --color-primary: var(--base-color-red-2);
+  --color-text: var(--base-color-black);
+  --color-text-second: var(--base-color-black-3);
+
+  // base gap
+  --base-gap: 1.6rem;
+
+  // base padding
+  --base-padding-y: 1.6rem;
+  --base-padding-x: 1.6rem;
+
+  --padding-side: calc(var(--base-padding-x) * 3.75);
+
+  // base margin
+  --base-margin-y: 0.8rem;
+  --base-margin-x: 0.8rem;
+
+  // base transition
+  --base-anim-fn: ease;
+  --base-anim-time: 0.3s;
+
+  // other
+  --hero-gradient: linear-gradient(264.42deg, #fee4ff 0%, #eff9ff 100%);
+  --container-width: 1126px;
+  --container-padding: var(--base-padding-x);
+  --anim-swiper-fn: cubic-bezier(0.9, 0.59, 0.8, 1.05);
+}

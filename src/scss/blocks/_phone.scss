@@ -1,0 +1,8 @@
+.phone {
+  color: var(--color-primary);
+  font-weight: 500;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
