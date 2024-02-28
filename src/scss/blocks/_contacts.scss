@@ -2,13 +2,37 @@
   @include flex-column;
   gap: calc(var(--base-gap) * 1.5);
 
+  @include xl-d {
+    flex-direction: row;
+    gap: var(--base-gap);
+  }
+
   &__phone {
     font-size: 2.4rem;
     line-height: 3.12rem;
   }
 
-  &__term:not(:first-child) {
-    margin-top: calc(var(--base-gap) * 1.5);
+  &__block-wrapper:not(:first-child) {
+    margin-top: calc(var(--base-margin-y) * 3);
+
+    @include xl-d {
+      margin-top: 0;
+      margin-left: calc(var(--base-margin-x) * 2);
+    }
+
+    @include lg-d {
+      margin-left: calc(var(--base-margin-x) * 4.5);
+    }
+  }
+
+  &__list {
+    @include xl-d {
+      @include flex-row;
+    }
+
+    @include lg-d {
+      width: 100%;
+    }
   }
 
   &__label {
@@ -21,6 +45,10 @@
   &__social-list {
     @include flex-row;
     gap: var(--base-gap);
+
+    @include lg-d {
+      margin-left: auto;
+    }
   }
 
   &__social-link {

@@ -3,17 +3,35 @@
   padding: calc(var(--base-padding-y) * 2) var(--padding-side);
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(3, fit-content);
+  grid-template-rows: repeat(3, min-content);
   column-gap: calc(var(--base-gap) * 2.25);
+
+  @include xl-d {
+    padding: var(--base-padding-y) var(--base-padding-x);
+    grid-template-columns: calc(1fr / 1.5) 1fr 1fr;
+    column-gap: var(--base-gap);
+  }
+
+  @include lg-d {
+    grid-template-columns: 171px minmax(266px, 1fr) 1fr;
+  }
 
   &__menu--left {
     grid-row: 1;
     grid-column: 1;
+
+    @include xl-d {
+      grid-row: 2;
+    }
   }
 
   &__menu--center {
     grid-row: 1;
     grid-column: 2;
+
+    @include xl-d {
+      grid-row: 2;
+    }
   }
 
   &__menu--right {
@@ -21,24 +39,41 @@
     grid-column: 3;
     border-right: 1px solid var(--base-color-gray-8);
     margin-bottom: auto;
+
+    @include xl-d {
+      grid-row: 2;
+      border-right-width: 0;
+    }
   }
 
   &__contacts {
     grid-row: 1;
     grid-column: 4;
     margin-top: calc(var(--base-margin-y) * 5.75 + 1px);
+
+    @include xl-d {
+      grid-column: 1 / -1;
+      margin-top: var(--base-margin-y);
+      padding-bottom: calc(var(--base-padding-y) * 1.5);
+      margin-bottom: calc(var(--base-margin-y) * 3);
+      border-bottom: 1px solid var(--base-color-gray-8);
+    }
   }
 
   &__links {
     grid-row: 2;
-    grid-column: 1 / 5;
+    grid-column: 1 / -1;
     margin-top: calc(var(--base-margin-y) * 3 - 0.6rem);
     padding-top: calc(var(--base-padding-y) * 2);
+
+    @include xl-d {
+      grid-row: 3;
+      margin-top: 0;
+    }
   }
 
   &__bottom {
-    grid-row: 3;
-    grid-column: 1 / 5;
+    grid-column: 1 / -1;
     @include flex-row;
     justify-content: space-between;
     margin-top: calc(var(--base-margin-y) * 2 + 0.1rem);
@@ -46,6 +81,11 @@
     border-top: 1px solid var(--base-color-gray-7);
     font-size: 1.3rem;
     color: var(--base-color-gray-3);
+
+    @include xl-d {
+      padding-top: calc(var(--base-padding-y) * 1.5);
+      margin-top: calc(var(--base-margin-y) * 3);
+    }
   }
 
   &__bottom-content {
@@ -63,6 +103,10 @@
     &:hover {
       text-decoration: underline;
     }
+  }
+
+  &__menu {
+    // background-color: red;
   }
 
   &__menu-header {
