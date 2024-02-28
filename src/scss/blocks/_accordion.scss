@@ -60,7 +60,6 @@
         padding-bottom,
       )
     );
-    padding: 0 var(--accordion-body-padding-x);
     background-color: var(--accordion-body-bg-color);
     border-radius: 0 0 var(--accordion-border-radius) var(--accordion-border-radius);
 
@@ -77,8 +76,6 @@
 
     &--show {
       grid-template-rows: 1fr;
-      padding-top: var(--accordion-body-padding-y);
-      padding-bottom: var(--accordion-body-padding-y);
       overflow: visible;
     }
 

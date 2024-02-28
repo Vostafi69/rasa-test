@@ -126,6 +126,10 @@
     }
   }
 
+  &__faq-text {
+    padding: var(--accordion-body-padding-y) var(--accordion-body-padding-x);
+  }
+
   &__faq-accordion {
     max-width: 76.3rem;
     margin-top: calc(var(--base-margin-y) + 0.338rem);
