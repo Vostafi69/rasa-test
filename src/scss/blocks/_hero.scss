@@ -13,13 +13,24 @@
     background-color: var(--base-color-blue-2);
     filter: blur(75px);
     border-radius: 50%;
+
+    @include md-d {
+      display: none;
+    }
   }
 
   &__banner {
     @include flex-row;
     justify-content: space-between;
     align-items: center;
-    background: url("../img/banner-1.png") left center / cover no-repeat;
+    background-image: url("../img/banner-1.png");
+
+    @include md-d {
+      flex-direction: column;
+      align-items: flex-start;
+      background: url("../img/bg-m.png") left center / cover no-repeat;
+      padding-top: calc(var(--base-padding-y) * 4.6);
+    }
   }
 
   &__banner-text {
@@ -30,6 +41,7 @@
 
     @include xl-d {
       padding-left: var(--base-padding-x);
+      margin-top: calc(-1 * var(--base-margin-y));
     }
   }
 
@@ -37,6 +49,17 @@
     font-size: 3.8rem;
     line-height: 4.9rem;
     font-weight: 600;
+
+    @include md-d {
+      font-size: 2.8rem;
+      line-height: 3.6rem;
+    }
+  }
+
+  &__banner-text-desc {
+    @include md-d {
+      margin-top: calc(-1 * var(--base-margin-y));
+    }
   }
 
   &__banner-text-link {
@@ -59,6 +82,10 @@
     &:active {
       opacity: 0.9;
     }
+
+    @include md-d {
+      display: none !important;
+    }
   }
 
   &__banner-img-container {
@@ -72,6 +99,15 @@
     @include xl-d {
       right: calc(var(--base-padding-x) * -9);
     }
+
+    @include md-d {
+      position: static;
+      margin: 0;
+      height: 28.3rem;
+      width: 100%;
+      max-width: none;
+      text-align: center;
+    }
   }
 
   &__banner-img {
@@ -79,5 +115,12 @@
     top: -2.6rem;
     right: -4.2rem;
     max-width: none;
+
+    @include md-d {
+      position: static;
+      width: 36rem;
+      margin-left: -8.4rem;
+      margin-top: 2.6rem;
+    }
   }
 }
