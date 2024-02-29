@@ -47,6 +47,11 @@
     &--collpased::after {
       transform: rotate(-180deg);
     }
+
+    @include sm-d {
+      padding-right: calc(var(--accrodion-header-padding-x) / 1.5);
+      padding-left: calc(var(--accrodion-header-padding-x) / 1.5);
+    }
   }
 
   &__collapse {
