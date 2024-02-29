@@ -144,6 +144,10 @@
   &__menu-list {
     @include flex-column;
     gap: calc(var(--base-gap) / 2);
+
+    @include md-d {
+      padding-bottom: var(--base-padding-y);
+    }
   }
 
   &__menu-link {

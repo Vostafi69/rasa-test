@@ -2,12 +2,55 @@
   padding: calc(var(--base-padding-y) + 0.3rem) var(--padding-side);
   @include flex-row;
   align-items: center;
+  position: relative;
+
+  @include xl-d {
+    padding: calc(var(--base-padding-y) + 0.3rem) var(--base-padding-x);
+  }
+
+  @include lg-d {
+    padding: var(--base-padding-y) var(--base-padding-x);
+  }
+
+  &__nav {
+    @include xl-d {
+      position: absolute;
+      bottom: -5.3rem;
+      left: 0;
+      right: 0;
+      z-index: 66;
+      padding: 0;
+      background-color: var(--base-color-white);
+      padding: 0 var(--base-padding-x) !important;
+    }
+  }
+
+  &__mobile-menu-icon {
+    display: none;
+
+    @include lg-d {
+      display: flex;
+    }
+  }
+
+  &__swiper {
+    width: 100% !important;
+    margin-left: calc(var(--base-margin-x) * 3) !important;
+
+    @include xl-d {
+      margin-left: 0 !important;
+      padding: var(--base-padding-y) 0 !important;
+      border-top: 1px solid var(--base-color-gray-7);
+    }
+  }
 
   &__nav-list {
     @include flex-row;
-    gap: var(--base-gap);
-    margin-left: calc(var(--base-margin-x) * 3);
     letter-spacing: 0.06px;
+  }
+
+  &__nav-item {
+    width: fit-content !important;
   }
 
   &__nav-link {

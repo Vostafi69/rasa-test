@@ -42,6 +42,7 @@
     @include xl-d {
       padding-left: var(--base-padding-x);
       margin-top: calc(-1 * var(--base-margin-y));
+      margin-top: 0;
     }
   }
 

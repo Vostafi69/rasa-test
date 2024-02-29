@@ -1,0 +1,15 @@
+.mobile-menu-icon {
+  width: 3rem;
+  height: 3rem;
+  padding: 0.5rem 0.4rem;
+  @include flex-column;
+  justify-content: space-between;
+  cursor: pointer;
+
+  &__line {
+    background-color: var(--base-color-black-1);
+    height: 0.3rem;
+    border-radius: 1rem;
+    flex-shrink: 0;
+  }
+}
