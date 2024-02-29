@@ -7,6 +7,10 @@
     gap: var(--base-gap);
   }
 
+  @include md-d {
+    flex-direction: column;
+  }
+
   &__phone {
     font-size: 2.4rem;
     line-height: 3.12rem;
@@ -23,6 +27,11 @@
     @include lg-d {
       margin-left: calc(var(--base-margin-x) * 4.5);
     }
+
+    @include md-d {
+      margin-left: 0;
+      margin-top: calc(var(--base-margin-y) * 2);
+    }
   }
 
   &__list {
@@ -32,6 +41,11 @@
 
     @include lg-d {
       width: 100%;
+    }
+
+    @include md-d {
+      flex-direction: column;
+      width: fit-content;
     }
   }
 
@@ -48,6 +62,10 @@
 
     @include lg-d {
       margin-left: auto;
+    }
+
+    @include md-d {
+      margin-left: 0;
     }
   }
 
