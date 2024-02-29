@@ -52,13 +52,7 @@
             <a class="header-bottom__nav-link" href="#">Карты</a>
           </li>
           <li class="header-bottom__nav-item swiper-slide">
-            <a class="header-bottom__nav-link" href="#">Ипотека</a>
-          </li>
-          <li class="header-bottom__nav-item swiper-slide">
             <a class="header-bottom__nav-link" href="#">Переводы</a>
-          </li>
-          <li class="header-bottom__nav-item swiper-slide">
-            <a class="header-bottom__nav-link" href="#">Страхование</a>
           </li>
           <li class="header-bottom__nav-item swiper-slide">
             <a class="header-bottom__nav-link" href="#">Страхование</a>
@@ -66,14 +60,36 @@
           <li class="header-bottom__nav-item swiper-slide">
             <a class="header-bottom__nav-link" href="#">Сервисы</a>
           </li>
+          <li class="header-bottom__nav-item header-bottom__nav-more more swiper-slide">
+            <button
+              class="more__title"
+              role="button"
+              aria-expanded="false"
+              id="more-btn-1"
+              aria-controls="list-more-btn-1"
+            >
+              Еще
+            </button>
+            <ul class="more__list" id="list-more-btn-1" aria-labelledby="more-btn-1">
+              <li class="header-bottom__nav-item swiper-slide">
+                <a class="header-bottom__nav-link" href="#">Ипотека</a>
+              </li>
+              <li class="more__item">
+                <a class="more__link" href="#">Страхование</a>
+              </li>
+              <li class="more__item">
+                <a class="more__link" href="#">Сервисы</a>
+              </li>
+            </ul>
+          </li>
         </ul>
       </div>
     </div>
     <div class="header-bottom__info">
       <div class="header-bottom__call">Заказать звонок</div>
       <div class="header-bottom__bank">Интернет-банк</div>
-      @@include('mobile-menu-icon.html')
     </div>
+    @@include('mobile-menu-icon.html')
   </div>
 
   <!-- breadcrunbs -->

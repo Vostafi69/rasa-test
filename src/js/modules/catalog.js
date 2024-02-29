@@ -5,14 +5,8 @@ export default (function catalogToggle() {
   if (!showButton || !collapse) return;
 
   showButton.addEventListener("click", (e) => {
-    if (collapse.classList.contains("catalog__collapse--show")) {
-      showButton.ariaExpanded = false;
-      showButton.classList.add("catalog__show-button--collapsed");
-      collapse.classList.remove("catalog__collapse--show");
-    } else {
-      showButton.ariaExpanded = true;
-      showButton.classList.remove("catalog__show-button--collapsed");
-      collapse.classList.add("catalog__collapse--show");
-    }
+    showButton.classList.toggle("catalog__show-button--collapsed");
+    collapse.classList.toggle("catalog__collapse--show");
+    showButton.setAttribute("aria-expanded", `${!(showButton.getAttribute("aria-expanded") === "true")}`);
   });
 })();

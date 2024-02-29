@@ -1,7 +1,5 @@
 .breadcrumbs {
   position: absolute;
-  left: var(--padding-side);
-  bottom: calc(-3.6rem);
   z-index: 56;
 
   &__list {
@@ -39,9 +37,5 @@
     &:hover {
       text-decoration: underline;
     }
-  }
-
-  @include md-d {
-    display: none;
   }
 }

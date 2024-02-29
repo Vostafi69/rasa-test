@@ -31,6 +31,10 @@
       background: url("../img/bg-m.png") left center / cover no-repeat;
       padding-top: calc(var(--base-padding-y) * 4.6);
     }
+
+    @include sm-d {
+      padding-top: calc(var(--base-padding-y) * 10.9);
+    }
   }
 
   &__banner-text {

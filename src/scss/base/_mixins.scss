@@ -54,8 +54,8 @@ $breakpoints: (
   }
 }
 
-@mixin xll-d {
-  @media (max-width: calc(map-get($breakpoints, xll) - 0.02px)) {
+@mixin xxl-d {
+  @media (max-width: calc(map-get($breakpoints, xxl) - 0.02px)) {
     @content;
   }
 }

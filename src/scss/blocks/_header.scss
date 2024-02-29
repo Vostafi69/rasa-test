@@ -2,4 +2,18 @@
   width: 100%;
   background-color: var(--base-color-white);
   position: relative;
+
+  &__breadcrumbs {
+    left: var(--padding-side);
+    bottom: -3.6rem;
+
+    @include xl-d {
+      left: 1.6rem;
+      bottom: -9rem;
+    }
+
+    @include sm-d {
+      bottom: -14.7rem;
+    }
+  }
 }
