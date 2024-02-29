@@ -8,12 +8,26 @@
     justify-content: space-between;
     margin-top: calc(var(--base-margin-y) * 5);
     margin-bottom: calc(var(--base-margin-y) * 3);
+
+    @include sm-d {
+      margin-top: calc(var(--base-margin-y) * 4);
+      flex-direction: column;
+      margin-bottom: calc(var(--base-margin-y) * 2 + 0.2rem);
+    }
   }
 
   &__title {
     font-weight: 500;
     font-size: 3.2rem;
     line-height: 4.2rem;
+
+    @include md-d {
+      font-size: 2.8rem;
+    }
+
+    @include sm-d {
+      margin-bottom: calc(var(--base-margin-y) * 2.5);
+    }
   }
 
   &__show-button {
@@ -37,6 +51,11 @@
     &:active {
       background-color: var(--base-color-gray-8);
     }
+
+    @include sm-d {
+      width: 100%;
+      justify-content: center;
+    }
   }
 
   &__show-button--collapsed &__show-button-icon {
@@ -48,6 +67,10 @@
     width: 2.4rem;
     height: 2.4rem;
     transition: transform var(--base-anim-fn) var(--base-anim-time);
+
+    @include sm-d {
+      margin-left: calc(var(--base-margin-x) + 0.2rem);
+    }
   }
 
   &__collapse {
@@ -68,22 +91,72 @@
     overflow: hidden;
   }
 
+  &__button-more {
+    background-color: var(--base-color-white);
+    border-radius: calc(var(--base-border-radius) / 4);
+    width: 100%;
+    padding: calc(var(--base-padding-y) - 1px) 0;
+    text-align: center;
+    font-weight: 500;
+    transition: background-color var(--base-anim-fn) var(--base-anim-time);
+    display: none;
+
+    &:hover {
+      background-color: var(--base-color-gray-7);
+    }
+
+    &:active {
+      background-color: var(--base-color-gray-8);
+    }
+
+    @include lg-d {
+      display: block;
+    }
+  }
+
   &__offers {
     margin-top: calc(var(--base-margin-y) * 3);
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: var(--base-gap);
+
+    @include lg-d {
+      margin-top: calc(var(--base-margin-y) * 5);
+      gap: calc(var(--base-gap) * 1.5);
+    }
+
+    @include sm-d {
+      margin-top: calc(var(--base-margin-y) * 4);
+    }
+  }
+
+  &__car-article {
+    @include lg-d {
+      margin-bottom: calc(var(--base-margin-y) * 2);
+    }
   }
 
   &__offers-car-article-best {
-    grid-column: 1 / 4;
+    grid-column: 1 / -1;
   }
 
   &__offers-car-articles {
     display: grid;
-    grid-column: 1 / 4;
+    grid-column: 1 / -1;
     grid-template-columns: repeat(3, 1fr);
     row-gap: calc(var(--base-gap) - 0.2rem);
     column-gap: var(--base-gap);
+    overflow: hidden;
+
+    @include lg-d {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      grid-auto-rows: 0px;
+      row-gap: 0;
+    }
+
+    @include sm-d {
+      grid-template-columns: repeat(1, 1fr);
+    }
   }
 }

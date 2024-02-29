@@ -4,10 +4,32 @@
   padding: calc(var(--base-padding-y) * 2.5) 0 calc(var(--base-padding-y) * 2.5) calc(var(--base-padding-x) * 2.5);
   @include flex-row;
   justify-content: space-between;
+  align-items: center;
+
+  @include sm-d {
+    flex-direction: column;
+    padding: var(--base-padding-y) calc(var(--base-padding-x) * 1.5);
+    align-items: stretch;
+  }
 
   &__swiper {
     max-width: 50.9rem;
+    max-height: 19.2rem;
     flex-grow: 1;
+
+    @include lg-d {
+      max-width: 32.8rem;
+      max-height: 13.6rem;
+      margin-right: calc(var(--base-margin-x) * 5.25) !important;
+      margin-top: calc(var(--base-margin-y) * -2);
+    }
+
+    @include sm-d {
+      order: 0;
+      width: 100%;
+      margin: 0 !important;
+      max-width: none !important;
+    }
 
     &::after,
     &::before {
@@ -18,6 +40,10 @@
       width: 7.6rem;
       z-index: 55;
       pointer-events: none;
+
+      @include lg-d {
+        width: 3rem;
+      }
     }
 
     &::before {
@@ -34,34 +60,73 @@
   }
 
   &__swiper-img {
-    width: 36.5rem;
-    height: auto;
-    object-position: center;
     object-fit: cover;
+    object-position: center;
+
+    @include lg-d {
+      width: 29.6rem !important;
+      max-width: none;
+      margin-top: calc(var(--base-margin-y) * -0.6);
+    }
+
+    @include sm-d {
+      width: 26.6rem !important;
+    }
   }
 
   &__swiper-button-next,
   &__swiper-button-prev {
     @include flex-center;
+
+    @include lg-d {
+      padding-top: calc(var(--base-padding-y) + 1px);
+    }
+
+    @include sm-d {
+      padding-top: 0;
+    }
   }
 
   &__swiper-button-next::after,
   &__swiper-button-prev::after {
-    content: url("../img/arrow.svg") !important;
     opacity: 0.2;
     font-size: 1.5rem !important;
+    font-weight: bold !important;
+    color: var(--base-color-black) !important;
+
+    @include lg-d {
+      opacity: 1;
+      font-size: 0.9rem !important;
+    }
   }
 
   &__swiper-button-prev {
     left: 4.3rem !important;
+
+    @include lg-d {
+      left: 0 !important;
+    }
+
+    @include md-d {
+      left: -1rem !important;
+    }
+  }
+
+  &__swiper-button-next,
+  &__swiper-button-prev {
+    z-index: 56 !important;
   }
 
   &__swiper-button-next {
     right: 4.3rem !important;
-  }
 
-  &__swiper-button-prev::after {
-    transform: rotate(-180deg);
+    @include lg-d {
+      right: 0 !important;
+    }
+
+    @include sm-d {
+      right: -1rem !important;
+    }
   }
 
   &__swiper-wrapper {
@@ -71,11 +136,20 @@
   &__swiper-slide {
     @include flex-center;
     overflow: hidden;
-    height: 22.6rem !important;
+    padding: 0 calc(var(--base-padding-x) * 4.75);
+
+    @include lg-d {
+      padding: 0 calc(var(--base-padding-x) * 2 + 0.4rem);
+    }
   }
 
   &__text {
     @include flex-column;
+
+    @include sm-d {
+      order: 1;
+      margin-top: calc(var(--base-margin-y) * 2.2);
+    }
   }
 
   &__badge {
@@ -99,6 +173,10 @@
     color: var(--color-text-second);
     margin-bottom: calc(var(--base-margin-y) * 3 - 0.3rem);
     line-height: 2rem;
+
+    @include lg-d {
+      display: none;
+    }
   }
 
   &__price {
@@ -107,6 +185,10 @@
     line-height: 3.12rem;
     font-weight: 500;
     margin-bottom: calc(var(--base-margin-y) * 3 - 0.3rem);
+
+    @include lg-d {
+      margin-bottom: calc(var(--base-margin-y) * 2 + 1px);
+    }
   }
 
   &__details-link {
