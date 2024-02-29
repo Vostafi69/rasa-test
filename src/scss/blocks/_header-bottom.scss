@@ -105,6 +105,7 @@
 
   &__call,
   &__bank {
+    display: block;
     position: relative;
     padding-left: calc(var(--base-padding-x) * 2);
     line-height: 2.4rem;
@@ -126,6 +127,18 @@
 
   &__call {
     color: var(--base-color-green);
+
+    @include sm-d {
+      display: none;
+    }
+
+    &--mobile {
+      display: none;
+
+      @include sm-d {
+        display: block;
+      }
+    }
 
     &::before {
       background-image: url(../img/Phone.svg);

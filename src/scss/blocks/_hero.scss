@@ -23,12 +23,12 @@
     @include flex-row;
     justify-content: space-between;
     align-items: center;
-    background-image: url("../img/banner-1.png");
+    background: url("../img/banner-1.png") left center / cover no-repeat;
 
     @include md-d {
       flex-direction: column;
       align-items: flex-start;
-      background: url("../img/bg-m.png") left center / cover no-repeat;
+      background-image: url("../img/bg-m.png");
       padding-top: calc(var(--base-padding-y) * 4.6);
     }
 
@@ -47,6 +47,14 @@
       padding-left: var(--base-padding-x);
       margin-top: calc(-1 * var(--base-margin-y));
       margin-top: 0;
+    }
+
+    @include md-d {
+      margin-top: calc(var(--base-margin-y) * 4);
+    }
+
+    @include sm-d {
+      margin-top: calc(-1 * var(--base-margin-y));
     }
   }
 
