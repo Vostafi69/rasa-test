@@ -1,0 +1,5 @@
+.hero__banner {
+  @include sm-d {
+    padding-top: calc(var(--base-padding-y) * 11.3);
+  }
+}

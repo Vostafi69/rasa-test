@@ -1,0 +1,21 @@
+.hero__banner-text-link {
+  margin-top: var(--base-margin-y);
+  display: block;
+  color: var(--base-color-white);
+  background-color: var(--color-primary);
+  border-radius: calc(var(--base-border-radius) / 2);
+  width: 23.1rem;
+  height: 4.8rem;
+  @include flex-center;
+  font-weight: 500;
+  transition: opacity evar(--base-anim-fn) var(--base-anim-time),
+    background-color var(--base-anim-fn) var(--base-anim-time);
+
+  &:hover {
+    background-color: var(--base-color-red-1);
+  }
+
+  &:active {
+    opacity: 0.9;
+  }
+}

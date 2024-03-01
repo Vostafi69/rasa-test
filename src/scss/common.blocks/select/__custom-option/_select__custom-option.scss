@@ -1,0 +1,11 @@
+.select__custom-option {
+  cursor: pointer;
+  padding: var(--select-body-padding-y) var(--select-body-padding-x);
+  transition: background-color var(--base-anim-fn) var(--base-anim-time);
+  border-radius: var(--select-border-radius);
+  color: var(--select-item-color);
+
+  &:hover {
+    background-color: var(--select-item-hover-color);
+  }
+}

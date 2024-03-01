@@ -1,0 +1,5 @@
+.car-article-best__swiper-button--next {
+  @include md-d {
+    right: -1rem !important;
+  }
+}

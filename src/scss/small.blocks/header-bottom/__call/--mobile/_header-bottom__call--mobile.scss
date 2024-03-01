@@ -1,0 +1,5 @@
+.header-bottom__call--mobile {
+  @include sm-d {
+    display: block;
+  }
+}

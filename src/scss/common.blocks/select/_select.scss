@@ -1,0 +1,12 @@
+.select {
+  &::after {
+    content: url("../img/chevron-black.svg");
+    position: absolute;
+    top: 1rem;
+    width: 2.4rem;
+    height: 2.4rem;
+    right: 1.6rem;
+    transition: transform var(--base-anim-fn) var(--base-anim-time);
+    transform: rotate(-180deg);
+  }
+}

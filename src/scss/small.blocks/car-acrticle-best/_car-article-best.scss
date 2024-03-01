@@ -1,0 +1,7 @@
+.car-article-best {
+  @include sm-d {
+    flex-direction: column;
+    padding: var(--base-padding-y) calc(var(--base-padding-x) * 1.5);
+    align-items: stretch;
+  }
+}

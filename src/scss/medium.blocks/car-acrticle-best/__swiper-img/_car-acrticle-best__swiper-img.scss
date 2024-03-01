@@ -1,0 +1,5 @@
+.car-article-best__swiper-img {
+  @include md-d {
+    max-width: 24rem;
+  }
+}

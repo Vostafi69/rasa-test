@@ -1,0 +1,13 @@
+.mobile-menu {
+  background-color: var(--base-color-white);
+  padding-bottom: var(--base-padding-y);
+  position: fixed;
+  border-radius: 0 0 var(--base-border-radius) var(--base-border-radius);
+  box-shadow: 0 1rem 2.5rem rgba(black, 0.05);
+  visibility: hidden;
+  opacity: 0;
+  z-index: 88;
+  transform: translateY(-2rem);
+  transition: opacity var(--base-anim-fn) var(--base-anim-time), transform var(--base-anim-fn) var(--base-anim-time),
+    visibility var(--base-anim-fn) var(--base-anim-time);
+}

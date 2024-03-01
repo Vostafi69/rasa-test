@@ -1,0 +1,8 @@
+.hero__banner-img {
+  @include md-d {
+    position: static;
+    width: 36rem;
+    margin-left: -8.4rem;
+    margin-top: 2.6rem;
+  }
+}

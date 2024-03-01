@@ -1,0 +1,8 @@
+.hero__banner-img-container {
+  position: relative;
+  right: calc(var(--padding-side) + 7.7rem);
+  max-width: 33rem;
+  height: 33rem;
+  flex-shrink: 1;
+  margin: calc(var(--base-margin-y) * 3 + 1px) 0;
+}

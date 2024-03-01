@@ -20,6 +20,10 @@
     align-items: center;
   }
 
+  &__separator {
+    margin: 0 0.8rem;
+  }
+
   &__nav-link {
     display: block;
     color: var(--base-color-gray-4);

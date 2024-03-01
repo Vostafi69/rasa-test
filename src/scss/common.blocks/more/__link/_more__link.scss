@@ -1,0 +1,9 @@
+.more__link {
+  color: var(--base-color-black-1);
+  line-height: 2rem;
+  transition: color var(--base-anim-fn) var(--base-anim-time);
+
+  &:hover {
+    color: var(--color-primary);
+  }
+}

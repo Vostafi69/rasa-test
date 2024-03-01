@@ -1,0 +1,25 @@
+.header-bottom__call {
+  display: block;
+  position: relative;
+  padding-left: calc(var(--base-padding-x) * 2);
+  line-height: 2.4rem;
+  cursor: pointer;
+  color: var(--base-color-green);
+
+  &::before {
+    background-image: url(../img/Phone.svg);
+  }
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 2.4rem;
+    height: 2.4rem;
+    left: 0;
+    pointer-events: none;
+  }
+}

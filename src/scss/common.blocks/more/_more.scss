@@ -1,0 +1,14 @@
+.more {
+  &::after {
+    content: "";
+    background-image: url("../img/chevron-black.svg");
+    background-position: center;
+    width: 1.4rem;
+    height: 1.4rem;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: rotate(-180deg);
+    transition: transform var(--base-anim-fn) var(--base-anim-time);
+  }
+}

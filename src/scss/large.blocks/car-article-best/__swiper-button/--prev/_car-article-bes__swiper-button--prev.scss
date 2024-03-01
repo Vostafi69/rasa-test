@@ -1,0 +1,5 @@
+.car-article-best__swiper-button--prev {
+  @include lg-d {
+    left: 0 !important;
+  }
+}

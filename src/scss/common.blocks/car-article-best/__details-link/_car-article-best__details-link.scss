@@ -1,0 +1,21 @@
+.car-article-best__details-link {
+  color: var(--color-primary);
+  font-size: 1.3rem;
+  line-height: 1.7rem;
+  padding-right: calc(var(--base-padding-x) * 1.5 + 0.2rem);
+  position: relative;
+  width: fit-content;
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  &::after {
+    content: "";
+    width: 1.8rem;
+    height: 1.8rem;
+    position: absolute;
+    right: 0;
+    background-image: url("../img/arrow-more.svg");
+  }
+}

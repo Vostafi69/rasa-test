@@ -1,0 +1,6 @@
+.car-article-best__swiper-img {
+  @include sm-d {
+    max-width: none;
+    width: 26.6rem !important;
+  }
+}

@@ -1,0 +1,5 @@
+.more {
+  @include lg-d {
+    margin-right: calc(var(--base-margin-x) * 2);
+  }
+}

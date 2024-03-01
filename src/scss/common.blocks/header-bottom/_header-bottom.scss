@@ -1,0 +1,5 @@
+.header-bottom {
+  padding: calc(var(--base-padding-y) + 0.3rem) var(--padding-side);
+  @include flex-row;
+  align-items: center;
+}

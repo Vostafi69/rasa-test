@@ -1,0 +1,5 @@
+.hero__banner-text {
+  @include md-d {
+    margin-top: calc(var(--base-margin-y) * 4);
+  }
+}

@@ -1,0 +1,5 @@
+.mobile-menu--show {
+  @include lg-d {
+    display: block;
+  }
+}

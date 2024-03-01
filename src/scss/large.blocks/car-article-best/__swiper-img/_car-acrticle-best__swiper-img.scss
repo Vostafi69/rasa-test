@@ -1,0 +1,7 @@
+.car-article-best__swiper-img {
+  @include lg-d {
+    width: 29.6rem !important;
+    max-width: none;
+    margin-top: calc(var(--base-margin-y) * -0.6);
+  }
+}

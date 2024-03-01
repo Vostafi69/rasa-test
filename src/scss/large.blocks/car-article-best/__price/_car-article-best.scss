@@ -1,0 +1,5 @@
+.car-article-best__price {
+  @include lg-d {
+    margin-bottom: calc(var(--base-margin-y) * 2 + 1px);
+  }
+}

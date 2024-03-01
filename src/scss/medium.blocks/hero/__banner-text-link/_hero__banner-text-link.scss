@@ -1,0 +1,5 @@
+.hero__banner-text-link {
+  @include md-d {
+    display: none !important;
+  }
+}

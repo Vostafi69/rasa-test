@@ -1,0 +1,6 @@
+.car-article-best__text {
+  @include sm-d {
+    order: 1;
+    margin-top: calc(var(--base-margin-y) * 2.2);
+  }
+}

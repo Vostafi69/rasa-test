@@ -1,0 +1,25 @@
+.header-bottom__bank {
+  display: block;
+  position: relative;
+  padding-left: calc(var(--base-padding-x) * 2);
+  line-height: 2.4rem;
+  cursor: pointer;
+  color: var(--color-primary);
+
+  &::before {
+    background-image: url(../img/login.svg);
+  }
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 2.4rem;
+    height: 2.4rem;
+    left: 0;
+    pointer-events: none;
+  }
+}

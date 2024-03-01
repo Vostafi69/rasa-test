@@ -1,0 +1,32 @@
+.car-article-best__swiper {
+  max-width: 50.9rem;
+  max-height: 19.2rem;
+  flex-grow: 1;
+
+  &::after,
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 7.6rem;
+    z-index: 55;
+    pointer-events: none;
+  }
+
+  &::before {
+    transform: translateX(-0.2rem);
+    left: 0;
+    background: linear-gradient(to right, white 0%, transparent 100%);
+  }
+
+  &::after {
+    transform: translateX(2px);
+    right: 0;
+    background: linear-gradient(to left, white 0%, transparent 100%);
+  }
+
+  & .swiper-button-disabled {
+    display: none !important;
+  }
+}

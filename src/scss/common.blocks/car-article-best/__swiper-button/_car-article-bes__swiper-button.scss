@@ -1,0 +1,11 @@
+.car-article-best__swiper-button {
+  z-index: 56 !important;
+  @include flex-center;
+
+  &::after {
+    opacity: 0.2;
+    font-size: 1.5rem !important;
+    font-weight: bold !important;
+    color: var(--base-color-black) !important;
+  }
+}

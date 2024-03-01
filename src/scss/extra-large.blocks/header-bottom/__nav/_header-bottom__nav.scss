@@ -1,0 +1,13 @@
+.header-bottom__nav {
+  @include xl-d {
+    position: absolute;
+    bottom: -5.3rem;
+    left: 0;
+    right: 0;
+    z-index: 66;
+    padding: 0;
+    background-color: var(--base-color-white);
+    padding: 0 var(--base-padding-x) !important;
+    border-top: 1px solid var(--base-color-gray-7);
+  }
+}
