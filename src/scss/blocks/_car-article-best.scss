@@ -24,6 +24,10 @@
       margin-top: calc(var(--base-margin-y) * -2);
     }
 
+    @include md-d {
+      max-width: 28rem;
+    }
+
     @include sm-d {
       order: 0;
       width: 100%;
@@ -69,7 +73,12 @@
       margin-top: calc(var(--base-margin-y) * -0.6);
     }
 
+    @include md-d {
+      max-width: 24rem;
+    }
+
     @include sm-d {
+      max-width: none;
       width: 26.6rem !important;
     }
   }

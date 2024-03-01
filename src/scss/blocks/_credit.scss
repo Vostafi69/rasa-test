@@ -95,7 +95,9 @@
     }
 
     &:last-child {
-      padding-bottom: calc(var(--base-padding-y) / 2);
+      @include sm-d {
+        padding-bottom: calc(var(--base-padding-y) / 2);
+      }
     }
 
     &--title {

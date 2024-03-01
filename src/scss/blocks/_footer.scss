@@ -164,6 +164,11 @@
     display: flex;
     flex-wrap: wrap;
     gap: calc(var(--base-gap) / 4);
+
+    @include md-d {
+      flex-direction: column;
+      padding-bottom: var(--base-padding-y);
+    }
   }
 
   &__links-item {
@@ -176,6 +181,10 @@
     line-height: 1.6rem;
     color: var(--base-color-gray-11);
     text-decoration: underline !important;
+
+    @include sm-d {
+      word-break: normal;
+    }
   }
 
   &__menu-accocrdion-wrapper {
@@ -185,6 +194,10 @@
 
     @include md-d {
       display: block;
+    }
+
+    @include sm-d {
+      margin-top: var(--base-margin-y);
     }
   }
 
