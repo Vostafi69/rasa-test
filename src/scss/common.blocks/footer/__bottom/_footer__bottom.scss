@@ -1,0 +1,20 @@
+.footer__bottom {
+  grid-column: 1 / -1;
+  @include flex-row;
+  justify-content: space-between;
+  margin-top: calc(var(--base-margin-y) * 2 + 0.1rem);
+  padding-top: calc(var(--base-padding-y) - 1px);
+  border-top: 1px solid var(--base-color-gray-7);
+  font-size: 1.3rem;
+  color: var(--base-color-gray-3);
+
+  @include xl-d {
+    padding-top: calc(var(--base-padding-y) * 1.5);
+    margin-top: calc(var(--base-margin-y) * 3);
+  }
+
+  @include md-d {
+    flex-direction: column;
+    margin-top: 0;
+  }
+}

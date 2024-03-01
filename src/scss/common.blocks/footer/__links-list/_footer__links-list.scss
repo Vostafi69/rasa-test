@@ -1,0 +1,5 @@
+.footer__links-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: calc(var(--base-gap) / 4);
+}

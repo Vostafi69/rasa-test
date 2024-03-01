@@ -1,0 +1,10 @@
+.accordion__collapse {
+  &--show {
+    grid-template-rows: 1fr;
+    overflow: visible;
+  }
+
+  &--show::before {
+    top: calc(-1 * var(--accordion-header-padding-y));
+  }
+}

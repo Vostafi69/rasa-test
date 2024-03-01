@@ -1,0 +1,22 @@
+.accordion__button {
+  position: relative;
+  width: 100%;
+  flex-direction: row;
+  background-color: var(--accordion-header-bg-color) !important;
+  color: var(--base-color-black) !important;
+  font-weight: 400 !important;
+  justify-content: space-between;
+  border-radius: var(--accordion-border-radius) !important;
+  padding: var(--accordion-header-padding-y) calc(var(--accrodion-header-padding-x) * 2)
+    var(--accordion-header-padding-y) var(--accrodion-header-padding-x);
+
+  &::after {
+    width: 2rem;
+    height: 2rem;
+    content: url("../img/chevron-black.svg");
+    margin-left: auto;
+    @include transition(transform);
+    transform: rotate(0);
+    @include flex-center;
+  }
+}

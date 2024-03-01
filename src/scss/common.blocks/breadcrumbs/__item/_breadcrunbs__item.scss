@@ -1,11 +1,4 @@
 .breadcrumbs {
-  position: absolute;
-  z-index: 56;
-
-  &__list {
-    @include flex-row;
-  }
-
   &__item {
     margin-right: var(--base-margin-x);
     padding-right: 2.5rem;
@@ -26,16 +19,5 @@
 
   &__item:last-child {
     color: var(--base-color-black-2);
-  }
-
-  &__link {
-    color: inherit;
-    opacity: inherit;
-    font-size: 1.3rem;
-    line-height: 1.69rem;
-
-    &:hover {
-      text-decoration: underline;
-    }
   }
 }

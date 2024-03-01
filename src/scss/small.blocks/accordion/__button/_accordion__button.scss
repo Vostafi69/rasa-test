@@ -1,0 +1,6 @@
+.accordion__button {
+  @include sm-d {
+    padding-right: calc(var(--accrodion-header-padding-x) / 1.5);
+    padding-left: calc(var(--accrodion-header-padding-x) / 1.5);
+  }
+}

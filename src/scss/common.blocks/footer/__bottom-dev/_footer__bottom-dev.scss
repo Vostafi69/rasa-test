@@ -1,0 +1,8 @@
+.footer__bottom-dev {
+  line-height: 1.7rem;
+  color: inherit;
+
+  @include md-d {
+    margin-top: calc(var(--base-margin-y) * 2);
+  }
+}

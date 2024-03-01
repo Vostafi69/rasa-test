@@ -1,0 +1,5 @@
+.footer__menu--center {
+  @include xl-d {
+    grid-row: 2;
+  }
+}

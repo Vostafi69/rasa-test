@@ -1,0 +1,6 @@
+.footer__links {
+  @include xl-d {
+    grid-row: 3;
+    margin-top: 0;
+  }
+}

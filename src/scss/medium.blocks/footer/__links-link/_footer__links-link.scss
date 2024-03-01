@@ -1,0 +1,5 @@
+.footer__links-link {
+  @include sm-d {
+    word-break: normal;
+  }
+}
