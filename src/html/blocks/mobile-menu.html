@@ -1,25 +1,22 @@
-<!-- header -->
-<header class="header">
-  <!-- top part -->
-  <div class="header-top">
+<div class="mobile-menu header__mobile-menu">
+  <div class="header-top mobile-menu__header-top">
     <nav class="header-top__nav">
-      <ul class="header-top__nav-list">
-        <li class="header-top__nav-item">
+      <ul class="header-top__nav-list mobile-menu__nav-list">
+        <li class="header-top__nav-item mobile-menu__top-item">
           <a class="header-top__nav-link header-top__nav-link--active" href="#">Частным клиентам</a>
         </li>
-        <li class="header-top__nav-item">
+        <li class="header-top__nav-item mobile-menu__top-item">
           <a class="header-top__nav-link" href="#">Для бизнеса</a>
         </li>
-        <li class="separator"></li>
-        <li class="header-top__nav-item">
+        <li class="header-top__nav-item mobile-menu__top-item">
           <a class="header-top__nav-link" href="#">О банке</a>
         </li>
-        <li class="header-top__nav-item">
+        <li class="header-top__nav-item mobile-menu__top-item">
           <a class="header-top__nav-link" href="#">Офисы</a>
         </li>
       </ul>
     </nav>
-    <div class="header-top__info">
+    <div class="header-top__info mobile-menu__header-top-info">
       <a class="phone header-top__phone" href="tel:+78007555606">8 (800) 775-56-06</a>
       <div class="header-top__city">
         <p class="header-top__city-name">
@@ -29,8 +26,6 @@
       <div class="header-top__lan">English</div>
     </div>
   </div>
-
-  <!-- bottom part -->
   <div class="header-bottom">
     <a class="logo" href="#">
       <img class="logo__img" src="./img/Logo.png" alt="logo" />
@@ -92,11 +87,50 @@
       >
       <a class="header-bottom__bank" href="#" target="_blank" role="button">Интернет-банк</a>
     </div>
-    @@include('mobile-menu-icon.html')
+    <!-- icon -->
+    <div class="mobile-menu-icon mobile-menu-icon--close header-bottom__mobile-menu-icon" role="button">
+      <span class="mobile-menu-icon__line"></span>
+      <span class="mobile-menu-icon__line"></span>
+      <span class="mobile-menu-icon__line"></span>
+    </div>
   </div>
-
-  <!-- breadcrunbs -->
-  @@include('breadcrumbs.html')
-  <!-- mobile menu -->
-  @@include('mobile-menu.html')
-</header>
+  <!-- contacts -->
+  <div class="contacts mobile-menu__contacts">
+    <dl class="contacts__list mobile-menu__contacts-list">
+      <div class="contacts__block-wrapper mobile-menu__block-wrapper">
+        <dt class="contacts__term">
+          <a class="phone contacts__phone" href="tel:+78007755606">8 800 775-56-06</a>
+        </dt>
+        <dd class="contacts__label">Для звонков по России (бесплатно)</dd>
+      </div>
+      <div class="contacts__block-wrapper mobile-menu__block-wrapper">
+        <dt class="contacts__term">
+          <a class="phone contacts__phone" href="tel:+78007755606">+7 495 232-37-23</a>
+        </dt>
+        <dd class="contacts__label">Для блокировка карт (круглосуточно)</dd>
+      </div>
+    </dl>
+    <ul class="contacts__social-list mobile-menu__social-list">
+      <li class="contacts__social-item">
+        <a class="contacts__social-link" href="#">
+          <object class="contacts__social-img" data="./img/tel.svg" type="image/svg+xml"></object>
+        </a>
+      </li>
+      <li class="contacts__social-item">
+        <a class="contacts__social-link" href="#">
+          <object class="contacts__social-img" data="./img/wk.svg" type="image/svg+xml"></object>
+        </a>
+      </li>
+      <li class="contacts__social-item">
+        <a class="contacts__social-link" href="#">
+          <object class="contacts__social-img" data="./img/ok.svg" type="image/svg+xml"></object>
+        </a>
+      </li>
+      <li class="contacts__social-item">
+        <a class="contacts__social-link" href="#">
+          <object class="contacts__social-img" data="./img/x.svg" type="image/svg+xml"></object>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>

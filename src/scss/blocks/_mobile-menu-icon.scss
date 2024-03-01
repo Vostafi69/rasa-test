@@ -12,4 +12,24 @@
     border-radius: 1rem;
     flex-shrink: 0;
   }
+
+  &--close {
+    justify-content: center;
+  }
+
+  &--close > :nth-child(2) {
+    display: none;
+  }
+
+  &--close > :first-child {
+    margin-top: 0.125rem;
+    height: 0.2rem;
+    transform: rotate(-45deg);
+  }
+
+  &--close > :last-child {
+    height: 0.2rem;
+    margin-top: -0.125rem;
+    transform: rotate(45deg);
+  }
 }

@@ -1,13 +1,11 @@
-function mobileNav() {
+export default (function mobileNav() {
   // Mobile nav button
-  const navBtn = document.querySelector(".mobile-nav-btn");
-  const nav = document.querySelector(".mobile-nav");
-  const menuIcon = document.querySelector(".nav-icon");
+  const navBtns = document.querySelectorAll(".mobile-menu-icon");
+  const navMenu = document.querySelector(".mobile-menu");
 
-  navBtn.onclick = function () {
-    nav.classList.toggle("mobile-nav--open");
-    menuIcon.classList.toggle("nav-icon--active");
-  };
-}
-
-export default mobileNav;
+  navBtns.forEach((btn) => {
+    btn.addEventListener("click", (e) => {
+      navMenu.classList.toggle("mobile-menu--show");
+    });
+  });
+})();
