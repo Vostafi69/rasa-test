@@ -1,3 +1,10 @@
 .header-top__lan {
   line-height: 2rem;
+  cursor: pointer;
+
+  @include hover-fix {
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }
