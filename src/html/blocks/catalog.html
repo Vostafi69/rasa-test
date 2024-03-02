@@ -1,8 +1,8 @@
 <section class="catalog">
-  <div class="container catalog__container" id="car-catalog">
+  <div class="container catalog__container">
     <!-- catalog header -->
 
-    <div class="catalog__header">
+    <div class="catalog__header" id="car-catalog">
       <h2 class="catalog__title">Выберите себе авто</h2>
       <button
         class="catalog__show-button button"
@@ -144,7 +144,7 @@
           </article>
 
           <!-- cars catalog -->
-          <div class="catalog__offers-car-articles">
+          <div class="catalog__offers-car-articles" id="collapse-catalog-more-cars">
             <!-- start -->
 
             <!-- first row -->
@@ -378,7 +378,15 @@
           </div>
           <!-- end -->
         </div>
-        <button class="catalog__button-more">Показать все машины</button>
+        <button
+          class="catalog__button-more button"
+          id="catalog-more-cars"
+          aria-expanded="false"
+          aria-controls="collapse-catalog-more-cars"
+          type="button"
+        >
+          Показать все машины
+        </button>
       </div>
     </div>
     <!-- end collapse -->

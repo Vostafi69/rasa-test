@@ -3,10 +3,9 @@
   border-radius: calc(var(--base-border-radius) / 4);
   width: 100%;
   padding: calc(var(--base-padding-y) - 1px) 0;
-  text-align: center;
-  font-weight: 500;
   transition: background-color var(--base-anim-fn) var(--base-anim-time);
-  display: none;
+  display: none !important;
+  color: var(--base-color-black);
 
   @include hover-fix {
     &:hover {
