@@ -1,5 +1,6 @@
 .catalog__show-button {
   @include sm-d {
+    min-width: auto;
     width: 100%;
     justify-content: center;
   }
