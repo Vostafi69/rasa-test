@@ -1,9 +1,3 @@
 .header-bottom__nav-item {
   width: fit-content !important;
-
-  &:nth-child(6) ~ * {
-    @include xxl-d {
-      display: none;
-    }
-  }
 }

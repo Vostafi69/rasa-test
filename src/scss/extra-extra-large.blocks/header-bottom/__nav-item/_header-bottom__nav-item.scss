@@ -1,0 +1,7 @@
+.header-bottom__nav-item {
+  &:nth-child(5) ~ * {
+    @include xxl-d {
+      display: none;
+    }
+  }
+}
