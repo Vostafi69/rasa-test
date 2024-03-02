@@ -1,0 +1,6 @@
+.credit__faq {
+  @include xl-d {
+    margin-top: calc(var(--base-margin-y) * 9.2);
+    flex-direction: column;
+  }
+}

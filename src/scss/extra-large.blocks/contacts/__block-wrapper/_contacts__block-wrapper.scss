@@ -1,0 +1,8 @@
+.contacts {
+  &__block-wrapper:not(:first-child) {
+    @include xl-d {
+      margin-top: 0;
+      margin-left: calc(var(--base-margin-x) * 2);
+    }
+  }
+}

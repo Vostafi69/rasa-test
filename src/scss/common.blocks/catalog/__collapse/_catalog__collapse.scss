@@ -1,0 +1,8 @@
+.catalog__collapse {
+  overflow: hidden;
+  display: grid;
+  grid-template-rows: 0fr;
+  opacity: 0;
+  transition: grid-template-rows var(--base-anim-fn) var(--base-anim-time),
+    opacity var(--base-anim-fn) var(--base-anim-time);
+}

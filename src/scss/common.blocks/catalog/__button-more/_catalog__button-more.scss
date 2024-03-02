@@ -1,0 +1,20 @@
+.catalog__button-more {
+  background-color: var(--base-color-white);
+  border-radius: calc(var(--base-border-radius) / 4);
+  width: 100%;
+  padding: calc(var(--base-padding-y) - 1px) 0;
+  text-align: center;
+  font-weight: 500;
+  transition: background-color var(--base-anim-fn) var(--base-anim-time);
+  display: none;
+
+  @include hover-fix {
+    &:hover {
+      background-color: var(--base-color-gray-7);
+    }
+  }
+
+  &:active {
+    background-color: var(--base-color-gray-8);
+  }
+}

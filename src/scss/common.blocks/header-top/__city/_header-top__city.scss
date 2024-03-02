@@ -1,0 +1,11 @@
+.header-top__city {
+  line-height: 2rem;
+  position: relative;
+  padding-left: calc(var(--base-padding-x) * 1.5);
+  cursor: pointer;
+  transition: color var(--base-anim-fn) var(--base-anim-time);
+
+  &:hover {
+    color: var(--color-primary);
+  }
+}

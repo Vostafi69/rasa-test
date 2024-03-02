@@ -1,0 +1,6 @@
+.contacts__list {
+  @include md-d {
+    flex-direction: column;
+    width: fit-content;
+  }
+}

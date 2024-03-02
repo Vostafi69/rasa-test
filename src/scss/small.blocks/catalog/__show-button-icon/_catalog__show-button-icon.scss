@@ -1,0 +1,5 @@
+.catalog__show-button-icon {
+  @include sm-d {
+    margin-left: calc(var(--base-margin-x) + 0.2rem);
+  }
+}

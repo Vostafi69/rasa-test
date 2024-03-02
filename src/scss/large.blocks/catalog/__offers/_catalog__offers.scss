@@ -1,0 +1,6 @@
+.catalog__offers {
+  @include lg-d {
+    margin-top: calc(var(--base-margin-y) * 5);
+    gap: calc(var(--base-gap) * 1.5);
+  }
+}

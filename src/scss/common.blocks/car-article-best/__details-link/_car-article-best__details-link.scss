@@ -6,8 +6,10 @@
   position: relative;
   width: fit-content;
 
-  &:hover {
-    text-decoration: underline;
+  @include hover-fix {
+    &:hover {
+      text-decoration: underline;
+    }
   }
 
   &::after {

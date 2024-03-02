@@ -8,8 +8,10 @@
   background-color: var(--color-primary);
   border-radius: calc(var(--base-border-radius) / 2);
 
-  &:hover {
-    background-color: var(--base-color-red-1);
+  @include hover-fix {
+    &:hover {
+      background-color: var(--base-color-red-1);
+    }
   }
 
   &:active {

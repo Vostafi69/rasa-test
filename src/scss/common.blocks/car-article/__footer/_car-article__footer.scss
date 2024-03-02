@@ -1,0 +1,6 @@
+.car-article__footer {
+  @include flex-row;
+  justify-content: space-between;
+  margin-top: var(--base-margin-y);
+  align-items: center;
+}

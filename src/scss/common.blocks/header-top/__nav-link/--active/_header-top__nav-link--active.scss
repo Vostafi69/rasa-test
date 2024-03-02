@@ -1,0 +1,15 @@
+.header-top__nav-link--active {
+  color: var(--base-color-gray-1);
+  font-weight: 500;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    height: 0.2rem;
+    background-color: var(--color-primary);
+    left: 0;
+    right: 0.8rem;
+    bottom: -1px;
+  }
+}

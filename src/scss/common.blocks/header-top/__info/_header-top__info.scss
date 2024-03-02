@@ -1,0 +1,6 @@
+.header-top__info {
+  @include flex-row;
+  gap: var(--base-gap);
+  color: var(--base-color-black-1);
+  align-items: center;
+}

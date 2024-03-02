@@ -1,0 +1,6 @@
+.credit__table-title {
+  @include md-d {
+    padding-left: calc(var(--base-padding-x) / 2);
+    margin-bottom: calc(var(--base-margin-y) / -4);
+  }
+}

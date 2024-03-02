@@ -1,0 +1,7 @@
+.credit__table-cell {
+  &:first-child {
+    @include xl-d {
+      width: 40.6rem;
+    }
+  }
+}

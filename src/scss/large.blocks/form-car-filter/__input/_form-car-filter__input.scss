@@ -1,0 +1,6 @@
+.form-car-filter__input {
+  @include lg-d {
+    width: 100% !important;
+    max-width: 14.7rem;
+  }
+}

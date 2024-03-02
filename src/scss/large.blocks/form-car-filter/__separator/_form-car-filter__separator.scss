@@ -1,0 +1,5 @@
+.form-car-filter__separator {
+  @include lg-d {
+    margin: var(--base-margin-y) calc(var(--base-margin-x) * 2 - 1px) 0 calc(var(--base-margin-x) * 2 - 1px) !important;
+  }
+}

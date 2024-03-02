@@ -1,0 +1,5 @@
+.contacts {
+  &__block-wrapper:not(:first-child) {
+    margin-top: calc(var(--base-margin-y) * 3);
+  }
+}

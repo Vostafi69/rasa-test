@@ -1,0 +1,5 @@
+.header-top__info {
+  @include lg-d {
+    display: none;
+  }
+}

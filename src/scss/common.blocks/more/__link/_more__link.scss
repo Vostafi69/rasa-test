@@ -3,7 +3,9 @@
   line-height: 2rem;
   transition: color var(--base-anim-fn) var(--base-anim-time);
 
-  &:hover {
-    color: var(--color-primary);
+  @include hover-fix {
+    &:hover {
+      color: var(--color-primary);
+    }
   }
 }

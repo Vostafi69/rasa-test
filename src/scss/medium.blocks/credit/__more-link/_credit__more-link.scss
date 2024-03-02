@@ -1,0 +1,8 @@
+.credit__more-link {
+  @include md-d {
+    margin-top: calc(var(--base-margin-y) * 2.1);
+    margin-left: calc(var(--base-padding-x) / 2);
+    margin-bottom: 8px;
+    padding-right: calc(var(--base-padding-x) * 2);
+  }
+}

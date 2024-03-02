@@ -1,0 +1,6 @@
+.form-car-filter__fieldset {
+  @include sm-d {
+    width: 100%;
+    margin-top: calc(var(--base-margin-y) * 2);
+  }
+}

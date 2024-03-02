@@ -1,0 +1,6 @@
+.credit__table-row {
+  @include md-d {
+    @include flex-column;
+    padding: calc(var(--base-padding-y) * 1.25) 0 calc(var(--base-padding-y) - 0.4rem) 0;
+  }
+}

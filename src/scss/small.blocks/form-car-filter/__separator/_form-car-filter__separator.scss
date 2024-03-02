@@ -1,0 +1,6 @@
+.form-car-filter__separator {
+  @include sm-d {
+    margin: var(--base-margin-y) calc(var(--base-margin-x) / 2) 0 calc(var(--base-margin-x) / 2) !important;
+    width: 0.7rem;
+  }
+}

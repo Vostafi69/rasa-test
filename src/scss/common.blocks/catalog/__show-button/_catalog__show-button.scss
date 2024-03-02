@@ -1,0 +1,23 @@
+.catalog__show-button {
+  width: 25.6rem;
+  height: 4rem;
+  padding: 0 calc(var(--base-padding-x) * 1.5);
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--base-color-white);
+  color: var(--color-primary);
+  position: relative;
+  border-radius: calc(var(--base-border-radius) / 4);
+  transition: background-color var(--base-anim-fn) var(--base-anim-time);
+
+  @include hover-fix {
+    &:hover {
+      background-color: var(--base-color-gray-7);
+    }
+  }
+
+  &:active {
+    background-color: var(--base-color-gray-8);
+  }
+}

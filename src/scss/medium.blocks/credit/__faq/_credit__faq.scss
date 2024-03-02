@@ -1,0 +1,5 @@
+.credit__faq {
+  @include md-d {
+    margin-top: calc(var(--base-margin-y) * 10.5);
+  }
+}

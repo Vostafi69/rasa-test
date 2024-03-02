@@ -1,0 +1,5 @@
+.catalog__offers {
+  @include sm-d {
+    margin-top: calc(var(--base-margin-y) * 3.9);
+  }
+}

@@ -1,0 +1,13 @@
+.credit__table-cell {
+  @include md-d {
+    padding: 0;
+    padding-left: calc(var(--base-padding-x) / 2);
+  }
+
+  &:first-child {
+    @include md-d {
+      width: auto;
+      padding-bottom: calc(var(--base-padding-y) / 2);
+    }
+  }
+}

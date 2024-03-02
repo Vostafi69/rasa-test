@@ -1,0 +1,6 @@
+.credit__faq {
+  margin-top: calc(var(--base-margin-y) * 13.5 + 1px);
+  margin-bottom: calc(var(--base-margin-y) * 12.5);
+  @include flex-row;
+  justify-content: space-between;
+}

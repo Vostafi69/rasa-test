@@ -1,0 +1,21 @@
+.header-top {
+  &__nav-item {
+    @include lg-d {
+      flex-grow: 1;
+      text-align: center;
+      max-width: 50%;
+    }
+
+    &:first-child {
+      @include lg-d {
+        border-right: 1px solid var(--base-color-gray-7);
+      }
+    }
+
+    &:nth-child(2) ~ * {
+      @include lg-d {
+        display: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,7 @@
+.credit__table-cell {
+  &:last-child {
+    @include sm-d {
+      padding-bottom: calc(var(--base-padding-y) / 2);
+    }
+  }
+}

@@ -1,0 +1,6 @@
+.catalog__offers {
+  margin-top: calc(var(--base-margin-y) * 3);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--base-gap);
+}

@@ -1,0 +1,6 @@
+.contacts {
+  @include xl-d {
+    flex-direction: row;
+    gap: var(--base-gap);
+  }
+}

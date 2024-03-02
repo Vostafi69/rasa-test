@@ -1,0 +1,7 @@
+.catalog__header {
+  @include sm-d {
+    margin-top: calc(var(--base-margin-y) * 4);
+    flex-direction: column;
+    margin-bottom: calc(var(--base-margin-y) * 2 + 0.2rem);
+  }
+}

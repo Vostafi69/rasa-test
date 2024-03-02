@@ -1,0 +1,6 @@
+.catalog__header {
+  @include flex-row;
+  justify-content: space-between;
+  margin-top: calc(var(--base-margin-y) * 5);
+  margin-bottom: calc(var(--base-margin-y) * 3);
+}

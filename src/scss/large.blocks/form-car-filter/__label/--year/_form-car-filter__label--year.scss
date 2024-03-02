@@ -1,0 +1,7 @@
+.form-car-filter__label--year {
+  @include lg-d {
+    width: 15.3rem;
+    margin-right: calc(var(--base-margin-x) * 2.5);
+    min-width: auto;
+  }
+}
