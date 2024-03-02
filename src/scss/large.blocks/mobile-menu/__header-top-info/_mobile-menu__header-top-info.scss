@@ -1,0 +1,5 @@
+.mobile-menu__header-top-info {
+  @include lg-d {
+    display: flex;
+  }
+}
