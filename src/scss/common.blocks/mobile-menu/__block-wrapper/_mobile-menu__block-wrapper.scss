@@ -1,0 +1,7 @@
+.mobile-menu__block-wrapper {
+  margin-left: 0 !important;
+
+  &:nth-child(2) {
+    margin-top: calc(var(--base-margin-y) * 2) !important;
+  }
+}

@@ -59,3 +59,11 @@ $breakpoints: (
     @content;
   }
 }
+
+// hover fix
+
+@mixin hover-fix {
+  @media (hover: hover) and (pointer: fine) {
+    @content;
+  }
+}

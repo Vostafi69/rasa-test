@@ -1,0 +1,5 @@
+.credit__banner {
+  @include md-d {
+    margin-top: calc(var(--base-margin-y) * 4.5);
+  }
+}

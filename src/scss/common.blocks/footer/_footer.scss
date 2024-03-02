@@ -1,0 +1,8 @@
+.footer {
+  background-color: var(--base-color-white);
+  padding: calc(var(--base-padding-y) * 2) var(--padding-side);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, min-content);
+  column-gap: calc(var(--base-gap) * 2.25);
+}

@@ -1,0 +1,5 @@
+.header-top {
+  @include xl-d {
+    padding: 0 var(--base-padding-x);
+  }
+}

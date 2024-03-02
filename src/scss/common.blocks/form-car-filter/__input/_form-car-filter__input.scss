@@ -1,0 +1,15 @@
+.form-car-filter__input {
+  margin-top: var(--base-margin-y);
+  background-color: var(--base-color-gray-10);
+  border-radius: calc(var(--base-border-radius) / 2);
+  border: 1px solid var(--base-color-gray-9);
+  font-size: 1.3rem;
+  line-height: 1.8rem;
+  padding: calc(var(--base-padding-y) - 0.6rem) var(--base-padding-x);
+  transition: border-color var(--base-anim-fn) var(--base-anim-time);
+  width: 17rem;
+
+  &:focus {
+    border-color: var(--base-color-gray-5);
+  }
+}

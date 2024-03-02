@@ -1,0 +1,5 @@
+.car-article-best__swiper-slide {
+  @include lg-d {
+    padding: 0 calc(var(--base-padding-x) * 2 + 0.4rem);
+  }
+}

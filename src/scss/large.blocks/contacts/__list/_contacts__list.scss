@@ -1,0 +1,5 @@
+.contacts__list {
+  @include lg-d {
+    width: 100%;
+  }
+}

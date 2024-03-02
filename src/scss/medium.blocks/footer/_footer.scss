@@ -1,0 +1,5 @@
+.footer {
+  @include md-d {
+    grid-template-columns: 1fr 23.2rem 1fr;
+  }
+}

@@ -1,0 +1,14 @@
+.car-article-best__swiper {
+  @include lg-d {
+    max-width: 32.8rem;
+    max-height: 13.6rem;
+    margin-right: calc(var(--base-margin-x) * 5.25) !important;
+    margin-top: calc(var(--base-margin-y) * -2);
+  }
+  &::after,
+  &::before {
+    @include lg-d {
+      width: 3rem;
+    }
+  }
+}

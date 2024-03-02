@@ -6,4 +6,9 @@
 @import "./base/mixins";
 
 /* Blocks */
-@import "./blocks/*.scss";
+@import "./common.blocks/**/*.scss";
+@import "./extra-extra-large.blocks/**/*.scss";
+@import "./extra-large.blocks/**/*.scss";
+@import "./large.blocks/**/*.scss";
+@import "./medium.blocks/**/*.scss";
+@import "./small.blocks/**/*.scss";

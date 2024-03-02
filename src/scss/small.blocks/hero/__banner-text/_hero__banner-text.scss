@@ -1,0 +1,5 @@
+.hero__banner-text {
+  @include sm-d {
+    margin-top: calc(-1 * var(--base-margin-y));
+  }
+}

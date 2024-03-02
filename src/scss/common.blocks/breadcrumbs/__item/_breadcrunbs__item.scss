@@ -1,0 +1,23 @@
+.breadcrumbs {
+  &__item {
+    margin-right: var(--base-margin-x);
+    padding-right: 2.5rem;
+    position: relative;
+    color: var(--base-color-gray-4);
+
+    &:not(:last-child)::after {
+      content: "";
+      background-image: url("../img/arrow-bc.svg");
+      background-position: center;
+      width: 1.6rem;
+      height: 100%;
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+  }
+
+  &__item:last-child {
+    color: var(--base-color-black-2);
+  }
+}

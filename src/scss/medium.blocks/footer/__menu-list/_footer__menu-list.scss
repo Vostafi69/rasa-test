@@ -1,0 +1,5 @@
+.footer__menu-list {
+  @include md-d {
+    padding-bottom: var(--base-padding-y);
+  }
+}

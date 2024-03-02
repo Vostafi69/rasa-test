@@ -1,0 +1,25 @@
+.credit__more-link {
+  color: var(--color-primary);
+  font-weight: 500;
+  width: fit-content;
+  display: block;
+  position: relative;
+  padding-right: calc(var(--base-padding-x) * 2.5);
+  line-height: 2rem;
+  margin-top: calc(var(--base-margin-y) * 3 + 0.2rem);
+  margin-left: auto;
+
+  &::after {
+    content: url("../img/chevron.svg");
+    position: absolute;
+    width: 2.4rem;
+    height: 2.4rem;
+    right: 0;
+    top: -0.3rem;
+    transform: rotate(90deg);
+  }
+
+  &:hover {
+    text-decoration: underline;
+  }
+}

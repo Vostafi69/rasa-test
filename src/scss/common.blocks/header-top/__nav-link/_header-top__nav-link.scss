@@ -1,0 +1,12 @@
+.header-top__nav-link {
+  display: block;
+  color: var(--base-color-gray-4);
+  line-height: 2rem;
+  padding: var(--base-padding-y) calc(var(--base-padding-x) / 2);
+  transition: color var(--base-anim-fn) var(--base-anim-time);
+  position: relative;
+
+  &:hover {
+    color: var(--base-color-gray-1);
+  }
+}

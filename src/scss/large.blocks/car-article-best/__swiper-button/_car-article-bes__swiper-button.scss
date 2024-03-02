@@ -1,0 +1,12 @@
+.car-article-best__swiper-button {
+  &::after {
+    @include lg-d {
+      opacity: 1;
+      font-size: 0.9rem !important;
+    }
+  }
+
+  @include lg-d {
+    padding-top: calc(var(--base-padding-y) + 1px);
+  }
+}

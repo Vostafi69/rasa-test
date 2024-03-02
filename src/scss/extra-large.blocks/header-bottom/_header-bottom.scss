@@ -1,0 +1,5 @@
+.header-bottom {
+  @include xl-d {
+    padding: calc(var(--base-padding-y) + 0.3rem) var(--base-padding-x);
+  }
+}

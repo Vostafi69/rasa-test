@@ -1,0 +1,4 @@
+.contacts__social-list {
+  @include flex-row;
+  gap: var(--base-gap);
+}

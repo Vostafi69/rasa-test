@@ -1,0 +1,7 @@
+.header-bottom__info {
+  @include flex-row;
+  margin-left: auto;
+  align-items: center;
+  gap: var(--base-gap);
+  font-weight: 500;
+}

@@ -1,0 +1,34 @@
+.select {
+  &__custom-list::-webkit-scrollbar {
+    width: 0.5rem;
+    background-color: var(--base-color-gray-8);
+    border-radius: 0.5rem;
+    height: 100%;
+  }
+
+  &__custom-list::-webkit-scrollbar-thumb {
+    background: var(--base-color-gray-5);
+    border-radius: 0.5rem;
+  }
+
+  &__custom-list {
+    background-color: var(--selcet-body-background-color);
+    color: var(--select-color);
+    padding: var(--select-body-padding-y) var(--select-body-padding-x);
+    border-radius: 0 0 var(--select-border-radius) var(--select-border-radius);
+    border: 1px solid var(--select-border-color);
+    position: absolute;
+    top: 4.5rem;
+    left: 0;
+    right: 0;
+    max-height: 20rem;
+    overflow-y: auto;
+    box-shadow: 0 5px 25px var(--select-shadow-color);
+    z-index: 55;
+
+    @supports not selector(::-webkit-scrollbar) {
+      scrollbar-width: thin;
+      scrollbar-color: var(--base-color-gray-5) var(--base-color-gray-8);
+    }
+  }
+}

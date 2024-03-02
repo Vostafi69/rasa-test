@@ -1,0 +1,7 @@
+.footer {
+  @include xl-d {
+    padding: var(--base-padding-y) var(--base-padding-x);
+    grid-template-columns: calc(1fr / 1.5) 1fr 1fr;
+    column-gap: var(--base-gap);
+  }
+}

@@ -1,0 +1,5 @@
+.mobile-menu__contacts {
+  @include sm-d {
+    margin-top: calc(var(--base-margin-y) * 13.7);
+  }
+}

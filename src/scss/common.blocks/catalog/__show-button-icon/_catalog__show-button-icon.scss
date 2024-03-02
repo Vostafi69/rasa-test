@@ -1,0 +1,6 @@
+.catalog__show-button-icon {
+  pointer-events: none;
+  width: 2.4rem;
+  height: 2.4rem;
+  transition: transform var(--base-anim-fn) var(--base-anim-time);
+}

@@ -1,0 +1,5 @@
+.header-bottom__mobile-menu-icon {
+  @include sm-d {
+    margin-left: auto;
+  }
+}

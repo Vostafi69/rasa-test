@@ -67,17 +67,11 @@ gulp.task("images:dev", function () {
 });
 
 gulp.task("fonts:dev", function () {
-  return gulp
-    .src("./src/fonts/**/*")
-    .pipe(changed("./dev/fonts/"))
-    .pipe(gulp.dest("./dev/fonts/"));
+  return gulp.src("./src/fonts/**/*").pipe(changed("./dev/fonts/")).pipe(gulp.dest("./dev/fonts/"));
 });
 
 gulp.task("files:dev", function () {
-  return gulp
-    .src("./src/files/**/*")
-    .pipe(changed("./dev/files/"))
-    .pipe(gulp.dest("./dev/files/"));
+  return gulp.src("./src/files/**/*").pipe(changed("./dev/files/")).pipe(gulp.dest("./dev/files/"));
 });
 
 gulp.task("js:dev", function () {

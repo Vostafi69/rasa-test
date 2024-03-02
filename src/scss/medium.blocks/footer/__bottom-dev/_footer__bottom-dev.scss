@@ -1,0 +1,5 @@
+.footer__bottom-dev {
+  @include md-d {
+    margin-top: calc(var(--base-margin-y) * 2);
+  }
+}

@@ -18,11 +18,11 @@ export default (function accordion() {
       e.stopPropagation();
       if (accordion.classList.contains("accordion__collapse--show")) {
         accordion.classList.remove("accordion__collapse--show");
-        accordionTrigger.classList.add("accordion__button--collpased");
+        accordionTrigger.classList.add("accordion__button-collapsed");
         accordionTrigger.ariaExpanded = false;
       } else {
         accordion.classList.add("accordion__collapse--show");
-        accordionTrigger.classList.remove("accordion__button--collpased");
+        accordionTrigger.classList.remove("accordion__button-collapsed");
         accordionTrigger.ariaExpanded = true;
       }
     });

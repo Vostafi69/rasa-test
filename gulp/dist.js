@@ -61,19 +61,21 @@ gulp.task("html:dist", function () {
 });
 
 gulp.task("sass:dist", function () {
-  return gulp
-    .src("./src/scss/*.scss")
-    .pipe(changed("./dist/css/"))
-    .pipe(plumber(plumberNotify("SCSS")))
-    .pipe(sourceMaps.init())
-    .pipe(autoprefixer())
-    .pipe(sassGlob())
-    .pipe(webpCss())
-    .pipe(groupMedia())
-    .pipe(sass())
-    .pipe(csso())
-    .pipe(sourceMaps.write())
-    .pipe(gulp.dest("./dist/css/"));
+  return (
+    gulp
+      .src("./src/scss/*.scss")
+      .pipe(changed("./dist/css/"))
+      .pipe(plumber(plumberNotify("SCSS")))
+      // .pipe(sourceMaps.init())
+      .pipe(autoprefixer())
+      .pipe(sassGlob())
+      .pipe(webpCss())
+      .pipe(groupMedia())
+      .pipe(sass())
+      .pipe(csso())
+      // .pipe(sourceMaps.write())
+      .pipe(gulp.dest("./dist/css/"))
+  );
 });
 
 gulp.task("images:dist", function () {
@@ -89,17 +91,11 @@ gulp.task("images:dist", function () {
 });
 
 gulp.task("fonts:dist", function () {
-  return gulp
-    .src("./src/fonts/**/*")
-    .pipe(changed("./dist/fonts/"))
-    .pipe(gulp.dest("./dist/fonts/"));
+  return gulp.src("./src/fonts/**/*").pipe(changed("./dist/fonts/")).pipe(gulp.dest("./dist/fonts/"));
 });
 
 gulp.task("files:dist", function () {
-  return gulp
-    .src("./src/files/**/*")
-    .pipe(changed("./dist/files/"))
-    .pipe(gulp.dest("./dist/files/"));
+  return gulp.src("./src/files/**/*").pipe(changed("./dist/files/")).pipe(gulp.dest("./dist/files/"));
 });
 
 gulp.task("js:dist", function () {

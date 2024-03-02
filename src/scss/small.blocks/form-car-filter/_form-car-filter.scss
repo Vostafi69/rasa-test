@@ -1,0 +1,5 @@
+.form-car-filter {
+  @include sm-d {
+    flex-wrap: wrap;
+  }
+}

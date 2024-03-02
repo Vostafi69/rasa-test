@@ -1,0 +1,6 @@
+.header-bottom__mobile-menu-icon {
+  @include lg-d {
+    display: flex !important;
+    margin-left: calc(var(--base-margin-x) * 2);
+  }
+}

@@ -1,0 +1,9 @@
+.footer__menu-link {
+  color: var(--base-color-gray-2);
+  transition: color var(--base-anim-fn) var(--base-anim-time);
+  line-height: 2rem;
+
+  &:hover {
+    color: var(--base-color-gray-4);
+  }
+}

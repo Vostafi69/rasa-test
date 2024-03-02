@@ -1,0 +1,5 @@
+.catalog {
+  &__show-button--collapsed &__show-button-icon {
+    transform: rotate(-180deg);
+  }
+}

@@ -1,0 +1,6 @@
+.footer__bottom {
+  @include xl-d {
+    padding-top: calc(var(--base-padding-y) * 1.5);
+    margin-top: calc(var(--base-margin-y) * 3);
+  }
+}

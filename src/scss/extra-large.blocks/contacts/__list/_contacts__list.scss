@@ -1,0 +1,5 @@
+.contacts__list {
+  @include xl-d {
+    @include flex-row;
+  }
+}

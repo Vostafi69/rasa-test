@@ -1,0 +1,7 @@
+.contacts {
+  &__block-wrapper:not(:first-child) {
+    @include lg-d {
+      margin-left: calc(var(--base-margin-x) * 4.5);
+    }
+  }
+}

@@ -1,0 +1,7 @@
+.header-top {
+  @include flex-row;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--base-color-gray-7);
+  padding: 0 var(--padding-side);
+}

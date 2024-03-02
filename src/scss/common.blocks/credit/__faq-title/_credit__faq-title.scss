@@ -1,0 +1,16 @@
+.credit__faq-title {
+  font-size: 2.4rem;
+  font-weight: 600;
+  line-height: 3.12rem;
+  padding-left: calc(var(--base-padding-x) * 3.2 + 1px);
+  position: relative;
+
+  &::before {
+    content: url("../img/Question.svg");
+    position: absolute;
+    width: 4.5rem;
+    height: 4.5rem;
+    left: -0.7rem;
+    top: 0;
+  }
+}

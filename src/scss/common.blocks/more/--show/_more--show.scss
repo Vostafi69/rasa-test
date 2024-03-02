@@ -1,0 +1,11 @@
+.more {
+  &--show::after {
+    transform: rotate(0);
+  }
+
+  &--show &__list {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

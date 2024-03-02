@@ -1,0 +1,5 @@
+.footer__menu--left {
+  @include xl-d {
+    grid-row: 2;
+  }
+}

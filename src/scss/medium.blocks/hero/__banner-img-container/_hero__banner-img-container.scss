@@ -1,0 +1,10 @@
+.hero__banner-img-container {
+  @include md-d {
+    position: static;
+    margin: 0;
+    height: 28.3rem;
+    width: 100%;
+    max-width: none;
+    text-align: center;
+  }
+}

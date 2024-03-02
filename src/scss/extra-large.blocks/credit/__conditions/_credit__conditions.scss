@@ -1,0 +1,5 @@
+.credit__conditions {
+  @include xl-d {
+    margin-top: calc(var(--base-margin-y) * 4.9);
+  }
+}

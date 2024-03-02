@@ -1,0 +1,5 @@
+.hero__banner-img-container {
+  @include xl-d {
+    right: calc(var(--base-padding-x) * -9);
+  }
+}

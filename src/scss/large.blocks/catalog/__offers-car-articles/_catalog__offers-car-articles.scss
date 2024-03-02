@@ -1,0 +1,8 @@
+.catalog__offers-car-articles {
+  @include lg-d {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-auto-rows: 0px;
+    row-gap: 0;
+  }
+}

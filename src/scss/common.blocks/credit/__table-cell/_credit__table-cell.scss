@@ -1,0 +1,7 @@
+.credit__table-cell {
+  padding: calc(var(--base-padding-y) * 1.25) 0;
+
+  &:first-child {
+    width: 36.5rem;
+  }
+}

@@ -1,0 +1,13 @@
+:root {
+  --accordion-color: var(--base-color-black);
+  --accordion-body-bg-color: var(--base-color-transparent);
+  --accordion-header-bg-color: var(--base-color-white);
+  --accordion-font-size: var(--base-font-size);
+  --accordion-border-radius: var(--base-border-radius);
+
+  --accordion-header-padding-y: var(--base-padding-y);
+  --accrodion-header-padding-x: calc(var(--base-padding-x) * 1.5);
+
+  --accordion-body-padding-y: var(--base-padding-y);
+  --accordion-body-padding-x: var(--base-padding-x);
+}

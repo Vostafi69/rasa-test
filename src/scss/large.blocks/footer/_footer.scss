@@ -1,0 +1,5 @@
+.footer {
+  @include lg-d {
+    grid-template-columns: 171px minmax(26.6rem, 1fr) 1fr;
+  }
+}

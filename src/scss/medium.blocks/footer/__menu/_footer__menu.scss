@@ -1,0 +1,5 @@
+.footer__menu {
+  @include md-d {
+    display: none;
+  }
+}

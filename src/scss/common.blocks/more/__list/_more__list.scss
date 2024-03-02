@@ -1,0 +1,24 @@
+.more__list {
+  width: max-content;
+  top: 3.5rem;
+  right: -0.5rem;
+  position: absolute;
+  background-color: var(--base-color-white);
+  z-index: 66;
+  padding: var(--base-padding-y) var(--base-padding-y);
+  border-radius: var(--base-border-radius) 0 var(--base-border-radius) var(--base-border-radius);
+  box-shadow: 0 0 25px rgba(black, 0.1);
+  transition: all var(--base-anim-fn) var(--base-anim-time);
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(-1rem);
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -2rem;
+    right: 0;
+    border: 1rem solid transparent;
+    border-bottom: 1rem solid var(--base-color-white);
+  }
+}

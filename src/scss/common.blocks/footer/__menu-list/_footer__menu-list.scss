@@ -1,0 +1,4 @@
+.footer__menu-list {
+  @include flex-column;
+  gap: calc(var(--base-gap) / 2);
+}

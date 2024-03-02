@@ -1,0 +1,25 @@
+.accordion__collapse {
+  position: relative;
+  display: grid;
+  grid-template-rows: 0fr;
+  @include transition(
+    $properties: (
+      grid-template-rows,
+      padding-top,
+      padding-bottom,
+    )
+  );
+  background-color: var(--accordion-body-bg-color);
+  border-radius: 0 0 var(--accordion-border-radius) var(--accordion-border-radius);
+
+  &::before {
+    content: "";
+    position: absolute;
+    height: var(--accordion-header-padding-y);
+    top: calc(-2 * var(--accordion-header-padding-y));
+    left: 0;
+    right: 0;
+    z-index: 5;
+    background-color: var(--accordion-body-bg-color);
+  }
+}

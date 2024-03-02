@@ -1,0 +1,6 @@
+.catalog__show-button {
+  @include sm-d {
+    width: 100%;
+    justify-content: center;
+  }
+}

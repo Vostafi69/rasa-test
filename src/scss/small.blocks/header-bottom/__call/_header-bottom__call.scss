@@ -1,0 +1,5 @@
+.header-bottom__call {
+  @include sm-d {
+    display: none;
+  }
+}

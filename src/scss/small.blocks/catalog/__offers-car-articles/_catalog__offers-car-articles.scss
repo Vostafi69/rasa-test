@@ -1,0 +1,5 @@
+.catalog__offers-car-articles {
+  @include sm-d {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

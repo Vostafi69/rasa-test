@@ -1,0 +1,9 @@
+.footer__contacts {
+  @include xl-d {
+    grid-column: 1 / -1;
+    margin-top: var(--base-margin-y);
+    padding-bottom: calc(var(--base-padding-y) * 1.5);
+    margin-bottom: calc(var(--base-margin-y) * 3);
+    border-bottom: 1px solid var(--base-color-gray-8);
+  }
+}

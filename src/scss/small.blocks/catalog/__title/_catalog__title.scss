@@ -1,0 +1,5 @@
+.catalog__title {
+  @include sm-d {
+    margin-bottom: calc(var(--base-margin-y) * 2.5);
+  }
+}

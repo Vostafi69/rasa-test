@@ -1,0 +1,9 @@
+.mobile-menu__contacts {
+  flex-direction: column !important;
+  width: 100%;
+  text-align: center;
+  align-items: center;
+  margin-top: calc(var(--base-margin-y) * 6.6);
+  padding-top: var(--base-padding-y);
+  border-top: 1px solid var(--base-color-gray-7);
+}

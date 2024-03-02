@@ -1,0 +1,6 @@
+.form-car-filter__label--car {
+  @include lg-d {
+    margin-right: calc(var(--base-margin-x) * 2.5);
+    min-width: 11.8rem;
+  }
+}

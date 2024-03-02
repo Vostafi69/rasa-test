@@ -1,0 +1,5 @@
+.contacts {
+  @include md-d {
+    flex-direction: column;
+  }
+}

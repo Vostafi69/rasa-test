@@ -1,0 +1,6 @@
+.header-bottom__swiper {
+  @include xl-d {
+    margin-left: 0 !important;
+    padding: var(--base-padding-y) 0 !important;
+  }
+}

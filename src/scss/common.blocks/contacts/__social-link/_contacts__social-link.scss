@@ -1,0 +1,15 @@
+.contacts__social-link {
+  width: 4.6rem;
+  height: 4.6rem;
+  display: block;
+  @include flex-center;
+  background-color: var(--base-color-gray-8);
+  border-radius: 0.9rem;
+  transition: transform var(--base-anim-fn) var(--base-anim-time),
+    background-color var(--base-anim-fn) var(--base-anim-time);
+
+  &:hover {
+    transform: scale(1.1);
+    background-color: var(--base-color-gray-7);
+  }
+}

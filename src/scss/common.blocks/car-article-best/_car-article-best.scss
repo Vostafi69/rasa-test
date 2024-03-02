@@ -1,0 +1,7 @@
+.car-article-best {
+  background-color: var(--base-color-white);
+  padding: calc(var(--base-padding-y) * 2.5) 0 calc(var(--base-padding-y) * 2.5) calc(var(--base-padding-x) * 2.5);
+  @include flex-row;
+  justify-content: space-between;
+  align-items: center;
+}

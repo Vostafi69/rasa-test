@@ -1,0 +1,6 @@
+.footer__bottom {
+  @include md-d {
+    flex-direction: column;
+    margin-top: 0;
+  }
+}

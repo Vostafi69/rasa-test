@@ -1,0 +1,7 @@
+.header-top__nav-link--active {
+  &::before {
+    @include lg-d {
+      display: none;
+    }
+  }
+}

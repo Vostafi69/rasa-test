@@ -1,0 +1,6 @@
+.hero__banner-text {
+  padding-left: var(--padding-side);
+  @include flex-column;
+  gap: var(--base-gap);
+  margin-top: -0.1rem;
+}

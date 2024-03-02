@@ -1,0 +1,6 @@
+.footer__links-list {
+  @include md-d {
+    flex-direction: column;
+    padding-bottom: var(--base-padding-y);
+  }
+}

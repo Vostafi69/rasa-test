@@ -1,0 +1,13 @@
+.more__title {
+  color: var(--base-color-black-1);
+  line-height: 2rem;
+  transition: color var(--base-anim-fn) var(--base-anim-time);
+  position: relative;
+  padding-right: calc(var(--base-padding-x) * 1.25);
+
+  @include hover-fix {
+    &:hover {
+      color: var(--color-primary);
+    }
+  }
+}

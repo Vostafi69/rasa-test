@@ -1,0 +1,12 @@
+.mobile-menu__top-item {
+  display: block !important;
+  width: 50%;
+
+  &:nth-child(2) ~ * {
+    border-top: 1px solid var(--base-color-gray-7);
+  }
+
+  &:nth-child(odd) {
+    border-right: 1px solid var(--base-color-gray-7);
+  }
+}

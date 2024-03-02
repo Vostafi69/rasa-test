@@ -1,0 +1,18 @@
+.select__list {
+  outline: none;
+  padding: var(--select-header-padding-y) calc(var(--select-header-padding-x) * 2.5) var(--select-header-padding-y)
+    var(--select-header-padding-x);
+  border-radius: var(--select-border-radius);
+  border: 1px solid var(--select-border-color);
+  background: var(--select-header-background-color);
+  appearance: none;
+  color: var(--select-color);
+  width: 100%;
+  min-height: 3.5rem;
+  line-height: 1.8rem;
+
+  &:invalid {
+    color: var(--select-default-color);
+    font-size: 1.3rem;
+  }
+}

@@ -1,0 +1,5 @@
+.header-top {
+  &__nav-item:first-child &__nav-link {
+    padding-left: 0;
+  }
+}

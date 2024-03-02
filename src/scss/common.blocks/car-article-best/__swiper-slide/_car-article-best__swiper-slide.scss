@@ -1,0 +1,5 @@
+.car-article-best__swiper-slide {
+  @include flex-center;
+  overflow: hidden;
+  padding: 0 calc(var(--base-padding-x) * 4.75);
+}

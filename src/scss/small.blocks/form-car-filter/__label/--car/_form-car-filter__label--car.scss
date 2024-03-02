@@ -1,0 +1,8 @@
+.form-car-filter__label--car {
+  @include sm-d {
+    width: 100%;
+    max-width: calc(50% - 8px);
+    margin-right: 0;
+    min-width: auto;
+  }
+}

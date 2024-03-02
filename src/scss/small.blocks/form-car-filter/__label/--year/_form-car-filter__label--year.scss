@@ -1,0 +1,7 @@
+.form-car-filter__label--year {
+  @include sm-d {
+    width: 100%;
+    max-width: calc(50% - 8px);
+    margin-right: 0;
+  }
+}

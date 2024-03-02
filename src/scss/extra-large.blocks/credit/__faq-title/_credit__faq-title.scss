@@ -1,0 +1,5 @@
+.credit__faq-title {
+  @include xl-d {
+    padding-left: calc(var(--base-padding-x) * 3.7 + 1px);
+  }
+}
