@@ -32,14 +32,14 @@
 
 ### Установка
 
-\`javascript
+```javascript
 git clone https://github.com/Vostafi69/rasa-test.git
 npm i
-\`
+```
 
 ### Разработка
 
-```
+```javascript
 #Запускает дев сервер
 gulp
 ```
